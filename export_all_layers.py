@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
 """
-Export ALL data layers (Bronze, Silver, Gold) from DBT DuckDB to CSV
+Export ALL Data Layers (Bronze, Silver, Gold) from DBT DuckDB to CSV Format
+
+Script to extract all transformation layers from the DBT project
+and save them as CSV files for analysis and validation.
 """
 
 import duckdb
 import pandas as pd
 from pathlib import Path
 
-# Setup paths
-DBT_PROJECT_PATH = Path(__file__).parent / "dbt_project"
-DATA_PATH = Path(__file__).parent / "data"
-DB_PATH = DBT_PROJECT_PATH / "duckdb.db"
+# Configuration - Project Paths
+PROJECT_ROOT = Path(__file__).parent  # Root directory of the project
+DBT_PROJECT_PATH = PROJECT_ROOT / "dbt_project"  # DBT project directory
+DATA_LAYERS_PATH = PROJECT_ROOT / "data"  # Data layers root directory
+DBT_DATABASE_PATH = DBT_PROJECT_PATH / "target" / "duckdb.db"  # DBT compiled database
 
-# Schemas to export
-LAYERS = {
-    "bronze": ["stg_jobs_raw"],
+# Data Layers Structure
+DATA_LAYERS_STRUCTURE = {
+    "bronze": [
+        "stg_jobs_raw"
+    ],
     "silver": [
         "int_jobs_cleaned",
         "int_job_title_normalization",
@@ -33,70 +39,89 @@ LAYERS = {
     ]
 }
 
-# Schema mapping
-SCHEMA_MAP = {
+# Database Schema Mapping
+DBT_SCHEMA_MAPPING = {
     "bronze": "main_bronze",
     "silver": "main_silver",
     "gold": "main_gold"
 }
 
 def export_all_layers():
-    """Export all data layers to CSV"""
-    print(f"\n📊 Exporting ALL Data Layers (Bronze/Silver/Gold) to CSV\n")
-    print(f"{'=' * 70}")
+    """Export all data layers to CSV format"""
+    print(f"\nExporting All Data Layers (Bronze/Silver/Gold) to CSV\n")
+    print(f"{'=' * 80}")
     
     try:
-        # Connect to DuckDB
-        if not DB_PATH.exists():
-            print(f"✗ Database not found at: {DB_PATH}")
+        # Validate database exists
+        if not DBT_DATABASE_PATH.exists():
+            print(f"Error: Database not found at {DBT_DATABASE_PATH}")
             return False
         
-        print(f"✓ Using database: {DB_PATH}\n")
-        conn = duckdb.connect(str(DB_PATH), read_only=True)
+        print(f"Database found: {DBT_DATABASE_PATH}\n")
         
-        total_exported = 0
+        # Connect to DuckDB
+        dbt_connection = duckdb.connect(str(DBT_DATABASE_PATH), read_only=True)
+        
+        total_tables_exported = 0
         
         # Export each layer
-        for layer, tables in LAYERS.items():
-            layer_path = DATA_PATH / layer
-            layer_path.mkdir(parents=True, exist_ok=True)
+        for layer_name, layer_tables in DATA_LAYERS_STRUCTURE.items():
+            # Create output directory for layer
+            layer_output_path = DATA_LAYERS_PATH / layer_name
+            layer_output_path.mkdir(parents=True, exist_ok=True)
             
-            schema = SCHEMA_MAP.get(layer, f"main_{layer}")
-            print(f"\n🟤 {layer.upper()} Layer → {layer_path}")
-            print(f"{'-' * 70}")
+            # Get database schema
+            database_schema = DBT_SCHEMA_MAPPING.get(layer_name, f"main_{layer_name}")
             
-            for table in tables:
+            print(f"\n{layer_name.upper()} Layer")
+            print(f"{'-' * 80}")
+            
+            # Export each table in layer
+            for table_name in layer_tables:
                 try:
-                    query = f"SELECT * FROM {schema}.{table}"
-                    df = conn.execute(query).fetchdf()
+                    # Build SQL query
+                    sql_query = f"SELECT * FROM {database_schema}.{table_name}"
+                    
+                    # Execute query
+                    table_data = dbt_connection.execute(sql_query).fetchdf()
+                    
+                    # Define output CSV file
+                    csv_output_file = layer_output_path / f"{table_name}.csv"
                     
                     # Export to CSV
-                    output_path = layer_path / f"{table}.csv"
-                    df.to_csv(output_path, index=False)
+                    table_data.to_csv(csv_output_file, index=False)
                     
-                    row_count = len(df)
-                    size_mb = output_path.stat().st_size / (1024 * 1024)
+                    # Get statistics
+                    row_count = len(table_data)
+                    file_size_mb = csv_output_file.stat().st_size / (1024 * 1024)
                     
-                    print(f"  ✓ {table:45} {row_count:>8} rows  {size_mb:>7.2f} MB")
-                    total_exported += 1
+                    # Print success message
+                    print(f"  {table_name:45} {row_count:>8} rows  {file_size_mb:>7.2f} MB")
+                    total_tables_exported += 1
                     
-                except Exception as e:
-                    print(f"  ✗ {table:45} Error: {str(e)[:40]}")
+                except Exception as export_error:
+                    error_message = str(export_error)[:50]
+                    print(f"  {table_name:45} Error: {error_message}")
         
-        print(f"\n{'=' * 70}")
-        print(f"✓ Exported {total_exported}/{sum(len(v) for v in LAYERS.values())} tables")
-        print(f"\n📁 Exported to:")
-        for layer in LAYERS.keys():
-            print(f"   - {DATA_PATH / layer}")
+        # Summary
+        total_tables_available = sum(len(tables) for tables in DATA_LAYERS_STRUCTURE.values())
+        print(f"\n{'=' * 80}")
+        print(f"Export Summary: {total_tables_exported}/{total_tables_available} tables exported")
+        
+        print(f"\nOutput Directories:")
+        for layer_name in DATA_LAYERS_STRUCTURE.keys():
+            layer_path = DATA_LAYERS_PATH / layer_name
+            print(f"  {layer_name.capitalize():10} - {layer_path}")
         print()
         
-        conn.close()
+        # Close connection
+        dbt_connection.close()
         return True
         
-    except Exception as e:
-        print(f"✗ Export failed: {e}")
+    except Exception as error:
+        print(f"Error during export: {error}")
         return False
 
 if __name__ == "__main__":
-    success = export_all_layers()
-    exit(0 if success else 1)
+    export_success = export_all_layers()
+    exit(0 if export_success else 1)

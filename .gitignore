@@ -1,2 +1,12 @@
 *.db
 *.duckdb
+VARIABLES_CHANGES.md
+
+# Test Data - Development and Testing
+_test_data/
+_test_data/*.csv
+
+# Cache and Temporary Files
+__pycache__/
+*.pyc
+.DS_Store

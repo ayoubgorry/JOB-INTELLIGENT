@@ -20002,3 +20002,1566 @@ There are 1 unused configuration paths:
 [0m15:19:17.830225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001313ABD2130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001313E05AD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013139EEEFA0>]}
 [0m15:19:17.830225 [debug] [MainThread]: Flushing usage events
 [0m15:19:18.369341 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:28:40.534615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CC6C21C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CD9B83A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CD9B81F0>]}
+
+
+============================== 19:28:40.538711 | 41914592-c514-4e83-9791-b9b5f08fef59 ==============================
+[0m19:28:40.538711 [info ] [MainThread]: Running with dbt=1.10.18
+[0m19:28:40.538711 [debug] [MainThread]: running dbt with arguments {'log_path': 'C:\\Users\\Ayoub Gorry\\Desktop\\powerbi\\jobs-power-bi\\dbt_project\\logs', 'log_format': 'default', 'partial_parse': 'True', 'log_cache_events': 'False', 'empty': 'None', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'printer_width': '80', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'profiles_dir': 'C:\\Users\\Ayoub Gorry\\Desktop\\powerbi\\jobs-power-bi\\dbt_project', 'target_path': 'None', 'use_experimental_parser': 'False', 'static_parser': 'True', 'quiet': 'False', 'use_colors': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'write_json': 'True', 'indirect_selection': 'eager'}
+[0m19:28:40.585890 [info ] [MainThread]: dbt version: 1.10.18
+[0m19:28:40.585890 [info ] [MainThread]: python version: 3.9.13
+[0m19:28:40.585890 [info ] [MainThread]: python path: C:\Users\Ayoub Gorry\AppData\Local\Programs\Python\Python39\python.exe
+[0m19:28:40.585890 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m19:28:40.831169 [info ] [MainThread]: Using profiles dir at C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project
+[0m19:28:40.831169 [info ] [MainThread]: Using profiles.yml file at C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\profiles.yml
+[0m19:28:40.831169 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\dbt_project.yml
+[0m19:28:40.900543 [info ] [MainThread]: adapter type: duckdb
+[0m19:28:40.900543 [info ] [MainThread]: adapter version: 1.10.0
+[0m19:28:41.112571 [info ] [MainThread]: Configuration:
+[0m19:28:41.112571 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:28:41.112571 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:28:41.112571 [info ] [MainThread]: Required dependencies:
+[0m19:28:41.119899 [debug] [MainThread]: Executing "git --help"
+[0m19:28:41.174560 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:28:41.175568 [debug] [MainThread]: STDERR: "b''"
+[0m19:28:41.175568 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:28:41.175568 [info ] [MainThread]: Connection:
+[0m19:28:41.177590 [info ] [MainThread]:   database: duckdb
+[0m19:28:41.177590 [info ] [MainThread]:   schema: main
+[0m19:28:41.177590 [info ] [MainThread]:   path: duckdb.db
+[0m19:28:41.177590 [info ] [MainThread]:   config_options: None
+[0m19:28:41.179599 [info ] [MainThread]:   extensions: None
+[0m19:28:41.179599 [info ] [MainThread]:   settings: {}
+[0m19:28:41.179599 [info ] [MainThread]:   external_root: .
+[0m19:28:41.181607 [info ] [MainThread]:   use_credential_provider: None
+[0m19:28:41.181607 [info ] [MainThread]:   attach: None
+[0m19:28:41.182614 [info ] [MainThread]:   filesystems: None
+[0m19:28:41.182614 [info ] [MainThread]:   remote: None
+[0m19:28:41.182614 [info ] [MainThread]:   plugins: None
+[0m19:28:41.182614 [info ] [MainThread]:   disable_transactions: False
+[0m19:28:41.182614 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m19:28:41.956260 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m19:28:49.229125 [debug] [MainThread]: Using duckdb connection "debug"
+[0m19:28:49.229125 [debug] [MainThread]: On debug: select 1 as id
+[0m19:28:49.229125 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:28:49.276448 [debug] [MainThread]: SQL status: OK in 0.048 seconds
+[0m19:28:49.276448 [debug] [MainThread]: On debug: Close
+[0m19:28:49.276448 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:28:49.276448 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:28:49.276448 [debug] [MainThread]: Command `dbt debug` succeeded at 19:28:49.276448 after 8.93 seconds
+[0m19:28:49.292265 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:28:49.292265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CC6C21C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CEBBED30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CD7CED00>]}
+[0m19:28:49.292265 [debug] [MainThread]: Flushing usage events
+[0m19:28:50.154580 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:28:54.622947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592C392190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592D6873D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592D687220>]}
+
+
+============================== 19:28:54.622947 | 8c3b9240-10fa-4d3c-8d63-0c03179d9aba ==============================
+[0m19:28:54.622947 [info ] [MainThread]: Running with dbt=1.10.18
+[0m19:28:54.636032 [debug] [MainThread]: running dbt with arguments {'log_path': 'C:\\Users\\Ayoub Gorry\\Desktop\\powerbi\\jobs-power-bi\\dbt_project\\logs', 'log_format': 'default', 'partial_parse': 'True', 'log_cache_events': 'False', 'empty': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ayoub Gorry\\Desktop\\powerbi\\jobs-power-bi\\dbt_project', 'use_experimental_parser': 'False', 'printer_width': '80', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'debug': 'False', 'use_colors': 'True', 'static_parser': 'True', 'quiet': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'write_json': 'True', 'indirect_selection': 'eager'}
+[0m19:28:55.457926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592E715730>]}
+[0m19:28:55.586113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592D3FB100>]}
+[0m19:28:55.600350 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m19:28:56.054272 [debug] [MainThread]: checksum: 9646db7d1a5f5b9389d9c545d3ebf898b26bc1f63f6b5366f34a6af01d52cb91, vars: {}, profile: , target: , version: 1.10.18
+[0m19:28:59.561859 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:28:59.561859 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:28:59.573019 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds
+[0m19:28:59.593674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592ECBC130>]}
+[0m19:28:59.729751 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\manifest.json
+[0m19:28:59.787950 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\semantic_manifest.json
+[0m19:28:59.835785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592ECE2490>]}
+[0m19:28:59.837804 [info ] [MainThread]: Found 13 models, 456 macros
+[0m19:28:59.837804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592E74AC40>]}
+[0m19:28:59.840332 [info ] [MainThread]: 
+[0m19:28:59.840332 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:28:59.840332 [info ] [MainThread]: 
+[0m19:28:59.840332 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m19:28:59.849928 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb'
+[0m19:28:59.849928 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb'
+[0m19:28:59.863395 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb'
+[0m19:28:59.983456 [debug] [ThreadPool]: Using duckdb connection "list_duckdb"
+[0m19:28:59.985467 [debug] [ThreadPool]: Using duckdb connection "list_duckdb"
+[0m19:28:59.985467 [debug] [ThreadPool]: Using duckdb connection "list_duckdb"
+[0m19:28:59.985467 [debug] [ThreadPool]: On list_duckdb: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "list_duckdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"duckdb"'
+    
+  
+  
+[0m19:28:59.987479 [debug] [ThreadPool]: On list_duckdb: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "list_duckdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"duckdb"'
+    
+  
+  
+[0m19:28:59.987479 [debug] [ThreadPool]: On list_duckdb: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "list_duckdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"duckdb"'
+    
+  
+  
+[0m19:28:59.989488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:28:59.989488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:28:59.991499 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:00.056373 [debug] [ThreadPool]: SQL status: OK in 0.066 seconds
+[0m19:29:00.057275 [debug] [ThreadPool]: SQL status: OK in 0.065 seconds
+[0m19:29:00.057275 [debug] [ThreadPool]: SQL status: OK in 0.068 seconds
+[0m19:29:00.060313 [debug] [ThreadPool]: On list_duckdb: Close
+[0m19:29:00.062870 [debug] [ThreadPool]: On list_duckdb: Close
+[0m19:29:00.065221 [debug] [ThreadPool]: On list_duckdb: Close
+[0m19:29:00.068257 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_duckdb, now create_duckdb_main_silver)
+[0m19:29:00.068257 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_duckdb, now create_duckdb_main_gold)
+[0m19:29:00.068257 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_duckdb, now create_duckdb_main_bronze)
+[0m19:29:00.068257 [debug] [ThreadPool]: Creating schema "database: "duckdb"
+schema: "main_silver"
+"
+[0m19:29:00.068257 [debug] [ThreadPool]: Creating schema "database: "duckdb"
+schema: "main_gold"
+"
+[0m19:29:00.068257 [debug] [ThreadPool]: Creating schema "database: "duckdb"
+schema: "main_bronze"
+"
+[0m19:29:00.084030 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_silver"
+[0m19:29:00.086904 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_gold"
+[0m19:29:00.086904 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_bronze"
+[0m19:29:00.086904 [debug] [ThreadPool]: On create_duckdb_main_silver: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "create_duckdb_main_silver"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='duckdb'
+        and type='sqlite'
+    
+  
+[0m19:29:00.086904 [debug] [ThreadPool]: On create_duckdb_main_gold: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "create_duckdb_main_gold"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='duckdb'
+        and type='sqlite'
+    
+  
+[0m19:29:00.086904 [debug] [ThreadPool]: On create_duckdb_main_bronze: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "create_duckdb_main_bronze"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='duckdb'
+        and type='sqlite'
+    
+  
+[0m19:29:00.086904 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:29:00.086904 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:29:00.086904 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:29:00.099733 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m19:29:00.099733 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m19:29:00.099733 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m19:29:00.099733 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_silver"
+[0m19:29:00.099733 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_gold"
+[0m19:29:00.099733 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_bronze"
+[0m19:29:00.099733 [debug] [ThreadPool]: On create_duckdb_main_silver: BEGIN
+[0m19:29:00.099733 [debug] [ThreadPool]: On create_duckdb_main_gold: BEGIN
+[0m19:29:00.099733 [debug] [ThreadPool]: On create_duckdb_main_bronze: BEGIN
+[0m19:29:00.116372 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:29:00.116372 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m19:29:00.117886 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:29:00.117886 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_gold"
+[0m19:29:00.117886 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_silver"
+[0m19:29:00.117886 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_bronze"
+[0m19:29:00.117886 [debug] [ThreadPool]: On create_duckdb_main_gold: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "create_duckdb_main_gold"} */
+
+    
+    
+        create schema if not exists "duckdb"."main_gold"
+    
+[0m19:29:00.123691 [debug] [ThreadPool]: On create_duckdb_main_silver: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "create_duckdb_main_silver"} */
+
+    
+    
+        create schema if not exists "duckdb"."main_silver"
+    
+[0m19:29:00.123691 [debug] [ThreadPool]: On create_duckdb_main_bronze: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "create_duckdb_main_bronze"} */
+
+    
+    
+        create schema if not exists "duckdb"."main_bronze"
+    
+[0m19:29:00.123691 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m19:29:00.123691 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m19:29:00.123691 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m19:29:00.131487 [debug] [ThreadPool]: On create_duckdb_main_gold: COMMIT
+[0m19:29:00.131487 [debug] [ThreadPool]: On create_duckdb_main_silver: COMMIT
+[0m19:29:00.135634 [debug] [ThreadPool]: On create_duckdb_main_bronze: COMMIT
+[0m19:29:00.135634 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_gold"
+[0m19:29:00.135634 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_silver"
+[0m19:29:00.135634 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main_bronze"
+[0m19:29:00.135634 [debug] [ThreadPool]: On create_duckdb_main_gold: COMMIT
+[0m19:29:00.135634 [debug] [ThreadPool]: On create_duckdb_main_silver: COMMIT
+[0m19:29:00.135634 [debug] [ThreadPool]: On create_duckdb_main_bronze: COMMIT
+[0m19:29:00.144860 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m19:29:00.144860 [debug] [ThreadPool]: On create_duckdb_main_gold: Close
+[0m19:29:00.146207 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m19:29:00.149140 [debug] [ThreadPool]: On create_duckdb_main_bronze: Close
+[0m19:29:00.149140 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m19:29:00.149140 [debug] [ThreadPool]: On create_duckdb_main_silver: Close
+[0m19:29:00.152217 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb_main_silver'
+[0m19:29:00.152217 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb_main_gold'
+[0m19:29:00.152217 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb_main_bronze'
+[0m19:29:00.162611 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main_silver"
+[0m19:29:00.162611 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main_gold"
+[0m19:29:00.162611 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main_bronze"
+[0m19:29:00.162611 [debug] [ThreadPool]: On list_duckdb_main_silver: BEGIN
+[0m19:29:00.162611 [debug] [ThreadPool]: On list_duckdb_main_gold: BEGIN
+[0m19:29:00.162611 [debug] [ThreadPool]: On list_duckdb_main_bronze: BEGIN
+[0m19:29:00.162611 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:00.162611 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:00.162611 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:00.162611 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m19:29:00.162611 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m19:29:00.162611 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m19:29:00.162611 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main_silver"
+[0m19:29:00.178342 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main_gold"
+[0m19:29:00.178342 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main_bronze"
+[0m19:29:00.178342 [debug] [ThreadPool]: On list_duckdb_main_silver: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "list_duckdb_main_silver"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_silver'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m19:29:00.178342 [debug] [ThreadPool]: On list_duckdb_main_gold: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "list_duckdb_main_gold"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_gold'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m19:29:00.178342 [debug] [ThreadPool]: On list_duckdb_main_bronze: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "connection_name": "list_duckdb_main_bronze"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_bronze'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m19:29:00.203277 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m19:29:00.203277 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m19:29:00.203277 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m19:29:00.203277 [debug] [ThreadPool]: On list_duckdb_main_gold: ROLLBACK
+[0m19:29:00.203277 [debug] [ThreadPool]: On list_duckdb_main_silver: ROLLBACK
+[0m19:29:00.209795 [debug] [ThreadPool]: On list_duckdb_main_bronze: ROLLBACK
+[0m19:29:00.241826 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main_bronze'
+[0m19:29:00.241826 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main_gold'
+[0m19:29:00.241826 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main_silver'
+[0m19:29:00.241826 [debug] [ThreadPool]: On list_duckdb_main_bronze: Close
+[0m19:29:00.241826 [debug] [ThreadPool]: On list_duckdb_main_gold: Close
+[0m19:29:00.241826 [debug] [ThreadPool]: On list_duckdb_main_silver: Close
+[0m19:29:00.241826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592E7A6CD0>]}
+[0m19:29:00.241826 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:29:00.255861 [debug] [MainThread]: On master: BEGIN
+[0m19:29:00.255861 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:29:00.257600 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m19:29:00.257600 [debug] [MainThread]: On master: COMMIT
+[0m19:29:00.257600 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:29:00.257600 [debug] [MainThread]: On master: COMMIT
+[0m19:29:00.257600 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:29:00.257600 [debug] [MainThread]: On master: Close
+[0m19:29:00.273343 [debug] [Thread-1  ]: Began running node model.job_intelligent.stg_jobs_raw
+[0m19:29:00.273343 [info ] [Thread-1  ]: 1 of 13 START sql view model main_bronze.stg_jobs_raw .......................... [RUN]
+[0m19:29:00.273343 [debug] [Thread-1  ]: Acquiring new duckdb connection 'model.job_intelligent.stg_jobs_raw'
+[0m19:29:00.273343 [debug] [Thread-1  ]: Began compiling node model.job_intelligent.stg_jobs_raw
+[0m19:29:00.289403 [debug] [Thread-1  ]: Writing injected SQL for node "model.job_intelligent.stg_jobs_raw"
+[0m19:29:00.289403 [debug] [Thread-1  ]: Began executing node model.job_intelligent.stg_jobs_raw
+[0m19:29:00.337409 [debug] [Thread-1  ]: Writing runtime sql for node "model.job_intelligent.stg_jobs_raw"
+[0m19:29:00.337409 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.stg_jobs_raw"
+[0m19:29:00.337409 [debug] [Thread-1  ]: On model.job_intelligent.stg_jobs_raw: BEGIN
+[0m19:29:00.337409 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m19:29:00.337409 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m19:29:00.337409 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.stg_jobs_raw"
+[0m19:29:00.337409 [debug] [Thread-1  ]: On model.job_intelligent.stg_jobs_raw: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.stg_jobs_raw"} */
+
+  
+  create view "duckdb"."main_bronze"."stg_jobs_raw__dbt_tmp" as (
+    -- models/bronze/stg_jobs_raw.sql
+-- Bronze layer: Lecture directe des données brutes depuis final_data.csv
+-- Renommage et typage minimal
+
+
+
+-- Read directly from CSV file
+SELECT
+    -- Renommer les colonnes pour cohérence
+    title as job_title,
+    location,
+    postedTime as posted_time,
+    publishedAt as published_at,
+    jobUrl as job_url,
+    companyName as company_name,
+    companyUrl as company_url,
+    description as job_description,
+    contractType as contract_type,
+    workType as work_type,
+    
+    -- Métadonnées de traçabilité
+    NOW() as ingestion_timestamp,
+    '2026-01-08 18:28:54.559565+00:00' as dbt_run_id
+
+FROM read_csv_auto('../data/bronze/final_data.csv')
+
+WHERE 1=1
+    -- Filtrer les lignes vides
+    AND title IS NOT NULL
+    AND description IS NOT NULL
+  );
+
+[0m19:29:01.257114 [debug] [Thread-1  ]: SQL status: OK in 0.912 seconds
+[0m19:29:01.257114 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.stg_jobs_raw"
+[0m19:29:01.257114 [debug] [Thread-1  ]: On model.job_intelligent.stg_jobs_raw: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.stg_jobs_raw"} */
+alter view "duckdb"."main_bronze"."stg_jobs_raw__dbt_tmp" rename to "stg_jobs_raw"
+[0m19:29:01.257114 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m19:29:01.289048 [debug] [Thread-1  ]: On model.job_intelligent.stg_jobs_raw: COMMIT
+[0m19:29:01.289048 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.stg_jobs_raw"
+[0m19:29:01.289048 [debug] [Thread-1  ]: On model.job_intelligent.stg_jobs_raw: COMMIT
+[0m19:29:01.289048 [debug] [Thread-1  ]: SQL status: OK in 0.004 seconds
+[0m19:29:01.307036 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.stg_jobs_raw"
+[0m19:29:01.307036 [debug] [Thread-1  ]: On model.job_intelligent.stg_jobs_raw: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.stg_jobs_raw"} */
+
+      drop view if exists "duckdb"."main_bronze"."stg_jobs_raw__dbt_backup" cascade
+    
+[0m19:29:01.320589 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m19:29:01.327087 [debug] [Thread-1  ]: On model.job_intelligent.stg_jobs_raw: Close
+[0m19:29:01.331110 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259299090D0>]}
+[0m19:29:01.334545 [info ] [Thread-1  ]: 1 of 13 OK created sql view model main_bronze.stg_jobs_raw ..................... [[32mOK[0m in 1.06s]
+[0m19:29:01.334545 [debug] [Thread-1  ]: Finished running node model.job_intelligent.stg_jobs_raw
+[0m19:29:01.336285 [debug] [Thread-3  ]: Began running node model.job_intelligent.int_jobs_cleaned
+[0m19:29:01.336285 [info ] [Thread-3  ]: 2 of 13 START sql table model main_silver.int_jobs_cleaned ..................... [RUN]
+[0m19:29:01.336285 [debug] [Thread-3  ]: Acquiring new duckdb connection 'model.job_intelligent.int_jobs_cleaned'
+[0m19:29:01.336285 [debug] [Thread-3  ]: Began compiling node model.job_intelligent.int_jobs_cleaned
+[0m19:29:01.336285 [debug] [Thread-3  ]: Writing injected SQL for node "model.job_intelligent.int_jobs_cleaned"
+[0m19:29:01.336285 [debug] [Thread-3  ]: Began executing node model.job_intelligent.int_jobs_cleaned
+[0m19:29:01.368385 [debug] [Thread-3  ]: Writing runtime sql for node "model.job_intelligent.int_jobs_cleaned"
+[0m19:29:01.368385 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.int_jobs_cleaned"
+[0m19:29:01.368385 [debug] [Thread-3  ]: On model.job_intelligent.int_jobs_cleaned: BEGIN
+[0m19:29:01.384330 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m19:29:01.384330 [debug] [Thread-3  ]: SQL status: OK in 0.002 seconds
+[0m19:29:01.384330 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.int_jobs_cleaned"
+[0m19:29:01.388155 [debug] [Thread-3  ]: On model.job_intelligent.int_jobs_cleaned: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_jobs_cleaned"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_silver"."int_jobs_cleaned__dbt_tmp"
+  
+    as (
+      -- models/silver/int_jobs_cleaned.sql
+-- Silver layer: Nettoyage et normalisation des données brutes
+
+
+
+WITH raw_jobs AS (
+    SELECT * FROM "duckdb"."main_bronze"."stg_jobs_raw"
+),
+
+cleaned_jobs AS (
+    SELECT
+        -- Texte: lowercase, trim, remove special characters
+        LOWER(TRIM(job_title)) as job_title_cleaned,
+        LOWER(TRIM(location)) as location_cleaned,
+        LOWER(TRIM(company_name)) as company_name_cleaned,
+        LOWER(TRIM(job_description)) as job_description_cleaned,
+        LOWER(TRIM(contract_type)) as contract_type_cleaned,
+        LOWER(TRIM(work_type)) as work_type_cleaned,
+        
+        -- URLs as-is
+        job_url,
+        company_url,
+        
+        -- Dates
+        TRY_CAST(published_at AS DATE) as published_date,
+        posted_time,
+        
+        -- Extract year-month for time-based analysis
+        DATE_TRUNC('month', TRY_CAST(published_at AS DATE)) as published_year_month,
+        EXTRACT(YEAR FROM TRY_CAST(published_at AS DATE)) as published_year,
+        EXTRACT(MONTH FROM TRY_CAST(published_at AS DATE)) as published_month,
+        
+        -- Métadonnées
+        ingestion_timestamp
+    FROM raw_jobs
+)
+
+SELECT
+    *,
+    -- Deduplication flag
+    ROW_NUMBER() OVER (
+        PARTITION BY job_title_cleaned, company_name_cleaned, location_cleaned 
+        ORDER BY published_date DESC
+    ) as dedup_rank
+FROM cleaned_jobs
+    );
+  
+  
+[0m19:29:01.636240 [debug] [Thread-3  ]: SQL status: OK in 0.247 seconds
+[0m19:29:01.647136 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.int_jobs_cleaned"
+[0m19:29:01.647136 [debug] [Thread-3  ]: On model.job_intelligent.int_jobs_cleaned: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_jobs_cleaned"} */
+alter table "duckdb"."main_silver"."int_jobs_cleaned__dbt_tmp" rename to "int_jobs_cleaned"
+[0m19:29:01.651621 [debug] [Thread-3  ]: SQL status: OK in 0.002 seconds
+[0m19:29:01.660226 [debug] [Thread-3  ]: On model.job_intelligent.int_jobs_cleaned: COMMIT
+[0m19:29:01.663101 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.int_jobs_cleaned"
+[0m19:29:01.663101 [debug] [Thread-3  ]: On model.job_intelligent.int_jobs_cleaned: COMMIT
+[0m19:29:01.721203 [debug] [Thread-3  ]: SQL status: OK in 0.063 seconds
+[0m19:29:01.735454 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.int_jobs_cleaned"
+[0m19:29:01.737466 [debug] [Thread-3  ]: On model.job_intelligent.int_jobs_cleaned: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_jobs_cleaned"} */
+
+      drop table if exists "duckdb"."main_silver"."int_jobs_cleaned__dbt_backup" cascade
+    
+[0m19:29:01.739478 [debug] [Thread-3  ]: SQL status: OK in 0.001 seconds
+[0m19:29:01.741490 [debug] [Thread-3  ]: On model.job_intelligent.int_jobs_cleaned: Close
+[0m19:29:01.743502 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F18E4F0>]}
+[0m19:29:01.745513 [info ] [Thread-3  ]: 2 of 13 OK created sql table model main_silver.int_jobs_cleaned ................ [[32mOK[0m in 0.41s]
+[0m19:29:01.747267 [debug] [Thread-3  ]: Finished running node model.job_intelligent.int_jobs_cleaned
+[0m19:29:01.748040 [debug] [Thread-2  ]: Began running node model.job_intelligent.int_job_title_normalization
+[0m19:29:01.748040 [info ] [Thread-2  ]: 3 of 13 START sql table model main_silver.int_job_title_normalization .......... [RUN]
+[0m19:29:01.748040 [debug] [Thread-2  ]: Acquiring new duckdb connection 'model.job_intelligent.int_job_title_normalization'
+[0m19:29:01.748040 [debug] [Thread-2  ]: Began compiling node model.job_intelligent.int_job_title_normalization
+[0m19:29:01.748040 [debug] [Thread-2  ]: Writing injected SQL for node "model.job_intelligent.int_job_title_normalization"
+[0m19:29:01.763264 [debug] [Thread-2  ]: Began executing node model.job_intelligent.int_job_title_normalization
+[0m19:29:01.767387 [debug] [Thread-2  ]: Writing runtime sql for node "model.job_intelligent.int_job_title_normalization"
+[0m19:29:01.767387 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_job_title_normalization"
+[0m19:29:01.776153 [debug] [Thread-2  ]: On model.job_intelligent.int_job_title_normalization: BEGIN
+[0m19:29:01.776153 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m19:29:01.779878 [debug] [Thread-2  ]: SQL status: OK in 0.002 seconds
+[0m19:29:01.779878 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_job_title_normalization"
+[0m19:29:01.781901 [debug] [Thread-2  ]: On model.job_intelligent.int_job_title_normalization: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_job_title_normalization"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_silver"."int_job_title_normalization__dbt_tmp"
+  
+    as (
+      -- models/silver/int_job_title_normalization.sql
+-- Silver layer: Normaliser les intitulés de postes
+
+
+
+WITH cleaned_jobs AS (
+    SELECT * FROM "duckdb"."main_silver"."int_jobs_cleaned"
+),
+
+title_normalized AS (
+    SELECT
+        *,
+        CASE
+            WHEN job_title_cleaned LIKE '%data engineer%' THEN 'Data Engineer'
+            WHEN job_title_cleaned LIKE '%data scientist%' THEN 'Data Scientist'
+            WHEN job_title_cleaned LIKE '%data analyst%' THEN 'Data Analyst'
+            WHEN job_title_cleaned LIKE '%analytics engineer%' THEN 'Analytics Engineer'
+            WHEN job_title_cleaned LIKE '%ml engineer%' OR job_title_cleaned LIKE '%machine learning%' THEN 'ML Engineer'
+            WHEN job_title_cleaned LIKE '%data architect%' THEN 'Data Architect'
+            WHEN job_title_cleaned LIKE '%bi developer%' OR job_title_cleaned LIKE '%business intelligence%' THEN 'BI Developer'
+            WHEN job_title_cleaned LIKE '%etl%' OR job_title_cleaned LIKE '%pipeline%' THEN 'ETL/Pipeline Engineer'
+            WHEN job_title_cleaned LIKE '%data engineer%' THEN 'Data Engineer'
+            ELSE 'Other Data Role'
+        END as job_category,
+        
+        CASE
+            WHEN contract_type_cleaned LIKE '%cdi%' OR contract_type_cleaned LIKE '%permanent%' THEN 'Permanent'
+            WHEN contract_type_cleaned LIKE '%cdd%' OR contract_type_cleaned LIKE '%contract%' THEN 'Contract'
+            WHEN contract_type_cleaned LIKE '%stage%' OR contract_type_cleaned LIKE '%internship%' THEN 'Internship'
+            WHEN contract_type_cleaned LIKE '%freelance%' THEN 'Freelance'
+            ELSE 'Not Specified'
+        END as contract_type_normalized,
+        
+        CASE
+            WHEN work_type_cleaned LIKE '%remote%' THEN 'Remote'
+            WHEN work_type_cleaned LIKE '%hybrid%' THEN 'Hybrid'
+            WHEN work_type_cleaned LIKE '%onsite%' OR work_type_cleaned LIKE '%on-site%' THEN 'On-site'
+            ELSE 'Not Specified'
+        END as work_type_normalized
+    
+    FROM cleaned_jobs
+    WHERE dedup_rank = 1  -- Keep only first occurrence (most recent)
+)
+
+SELECT * FROM title_normalized
+    );
+  
+  
+[0m19:29:01.821324 [debug] [Thread-2  ]: SQL status: OK in 0.038 seconds
+[0m19:29:01.825767 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_job_title_normalization"
+[0m19:29:01.825767 [debug] [Thread-2  ]: On model.job_intelligent.int_job_title_normalization: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_job_title_normalization"} */
+alter table "duckdb"."main_silver"."int_job_title_normalization__dbt_tmp" rename to "int_job_title_normalization"
+[0m19:29:01.825767 [debug] [Thread-2  ]: SQL status: OK in 0.001 seconds
+[0m19:29:01.825767 [debug] [Thread-2  ]: On model.job_intelligent.int_job_title_normalization: COMMIT
+[0m19:29:01.825767 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_job_title_normalization"
+[0m19:29:01.825767 [debug] [Thread-2  ]: On model.job_intelligent.int_job_title_normalization: COMMIT
+[0m19:29:01.873238 [debug] [Thread-2  ]: SQL status: OK in 0.051 seconds
+[0m19:29:01.897478 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_job_title_normalization"
+[0m19:29:01.899492 [debug] [Thread-2  ]: On model.job_intelligent.int_job_title_normalization: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_job_title_normalization"} */
+
+      drop table if exists "duckdb"."main_silver"."int_job_title_normalization__dbt_backup" cascade
+    
+[0m19:29:01.901508 [debug] [Thread-2  ]: SQL status: OK in 0.001 seconds
+[0m19:29:01.905284 [debug] [Thread-2  ]: On model.job_intelligent.int_job_title_normalization: Close
+[0m19:29:01.907301 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F2BD070>]}
+[0m19:29:01.911360 [info ] [Thread-2  ]: 3 of 13 OK created sql table model main_silver.int_job_title_normalization ..... [[32mOK[0m in 0.16s]
+[0m19:29:01.913377 [debug] [Thread-2  ]: Finished running node model.job_intelligent.int_job_title_normalization
+[0m19:29:01.913377 [debug] [Thread-4  ]: Began running node model.job_intelligent.dim_company
+[0m19:29:01.913377 [debug] [Thread-3  ]: Began running node model.job_intelligent.dim_location
+[0m19:29:01.913377 [debug] [Thread-1  ]: Began running node model.job_intelligent.dim_time
+[0m19:29:01.921512 [debug] [Thread-2  ]: Began running node model.job_intelligent.int_skills_extraction
+[0m19:29:01.913377 [info ] [Thread-4  ]: 4 of 13 START sql table model main_gold.dim_company ............................ [RUN]
+[0m19:29:01.921512 [info ] [Thread-3  ]: 5 of 13 START sql table model main_gold.dim_location ........................... [RUN]
+[0m19:29:01.921512 [info ] [Thread-1  ]: 6 of 13 START sql table model main_gold.dim_time ............................... [RUN]
+[0m19:29:01.927464 [info ] [Thread-2  ]: 7 of 13 START sql table model main_silver.int_skills_extraction ................ [RUN]
+[0m19:29:01.927464 [debug] [Thread-4  ]: Acquiring new duckdb connection 'model.job_intelligent.dim_company'
+[0m19:29:01.932039 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.job_intelligent.int_jobs_cleaned, now model.job_intelligent.dim_location)
+[0m19:29:01.932039 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.job_intelligent.stg_jobs_raw, now model.job_intelligent.dim_time)
+[0m19:29:01.936040 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.job_intelligent.int_job_title_normalization, now model.job_intelligent.int_skills_extraction)
+[0m19:29:01.937611 [debug] [Thread-4  ]: Began compiling node model.job_intelligent.dim_company
+[0m19:29:01.937611 [debug] [Thread-3  ]: Began compiling node model.job_intelligent.dim_location
+[0m19:29:01.937611 [debug] [Thread-1  ]: Began compiling node model.job_intelligent.dim_time
+[0m19:29:01.937611 [debug] [Thread-2  ]: Began compiling node model.job_intelligent.int_skills_extraction
+[0m19:29:01.953700 [debug] [Thread-4  ]: Writing injected SQL for node "model.job_intelligent.dim_company"
+[0m19:29:01.963364 [debug] [Thread-3  ]: Writing injected SQL for node "model.job_intelligent.dim_location"
+[0m19:29:01.973888 [debug] [Thread-1  ]: Writing injected SQL for node "model.job_intelligent.dim_time"
+[0m19:29:01.985808 [debug] [Thread-2  ]: Writing injected SQL for node "model.job_intelligent.int_skills_extraction"
+[0m19:29:01.991851 [debug] [Thread-4  ]: Began executing node model.job_intelligent.dim_company
+[0m19:29:01.993865 [debug] [Thread-3  ]: Began executing node model.job_intelligent.dim_location
+[0m19:29:02.004890 [debug] [Thread-4  ]: Writing runtime sql for node "model.job_intelligent.dim_company"
+[0m19:29:02.004890 [debug] [Thread-1  ]: Began executing node model.job_intelligent.dim_time
+[0m19:29:02.015583 [debug] [Thread-3  ]: Writing runtime sql for node "model.job_intelligent.dim_location"
+[0m19:29:02.015583 [debug] [Thread-2  ]: Began executing node model.job_intelligent.int_skills_extraction
+[0m19:29:02.021636 [debug] [Thread-1  ]: Writing runtime sql for node "model.job_intelligent.dim_time"
+[0m19:29:02.026099 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_company"
+[0m19:29:02.026099 [debug] [Thread-2  ]: Writing runtime sql for node "model.job_intelligent.int_skills_extraction"
+[0m19:29:02.034364 [debug] [Thread-4  ]: On model.job_intelligent.dim_company: BEGIN
+[0m19:29:02.037302 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.dim_location"
+[0m19:29:02.037302 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.dim_time"
+[0m19:29:02.037302 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m19:29:02.040344 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_skills_extraction"
+[0m19:29:02.040344 [debug] [Thread-3  ]: On model.job_intelligent.dim_location: BEGIN
+[0m19:29:02.042359 [debug] [Thread-1  ]: On model.job_intelligent.dim_time: BEGIN
+[0m19:29:02.045746 [debug] [Thread-2  ]: On model.job_intelligent.int_skills_extraction: BEGIN
+[0m19:29:02.045746 [debug] [Thread-4  ]: SQL status: OK in 0.007 seconds
+[0m19:29:02.045746 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m19:29:02.045746 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:29:02.045746 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m19:29:02.045746 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_company"
+[0m19:29:02.045746 [debug] [Thread-3  ]: SQL status: OK in 0.004 seconds
+[0m19:29:02.045746 [debug] [Thread-1  ]: SQL status: OK in 0.004 seconds
+[0m19:29:02.045746 [debug] [Thread-2  ]: SQL status: OK in 0.005 seconds
+[0m19:29:02.045746 [debug] [Thread-4  ]: On model.job_intelligent.dim_company: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_company"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."dim_company__dbt_tmp"
+  
+    as (
+      -- models/gold/dim_company.sql
+-- Gold layer: Dimension Company
+
+
+
+WITH jobs AS (
+    SELECT DISTINCT
+        company_name_cleaned,
+        company_url
+    FROM "duckdb"."main_silver"."int_job_title_normalization"
+    WHERE company_name_cleaned IS NOT NULL
+),
+
+ranked_companies AS (
+    SELECT
+        ROW_NUMBER() OVER (ORDER BY company_name_cleaned) as company_id,
+        company_name_cleaned as company_name,
+        company_url,
+        NOW() as created_at
+    FROM jobs
+)
+
+SELECT
+    company_id,
+    company_name,
+    company_url,
+    created_at
+FROM ranked_companies
+ORDER BY company_id
+    );
+  
+  
+[0m19:29:02.045746 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.dim_location"
+[0m19:29:02.045746 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.dim_time"
+[0m19:29:02.058231 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_skills_extraction"
+[0m19:29:02.058231 [debug] [Thread-3  ]: On model.job_intelligent.dim_location: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_location"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."dim_location__dbt_tmp"
+  
+    as (
+      -- models/gold/dim_location.sql
+-- Gold layer: Dimension Location
+
+
+
+WITH jobs AS (
+    SELECT DISTINCT
+        location_cleaned as location_raw
+    FROM "duckdb"."main_silver"."int_job_title_normalization"
+    WHERE location_cleaned IS NOT NULL
+),
+
+location_parsed AS (
+    SELECT
+        location_raw,
+        -- Extract city (before comma)
+        CASE 
+            WHEN POSITION(',' IN location_raw) > 0 
+            THEN TRIM(SUBSTRING(location_raw, 1, POSITION(',' IN location_raw) - 1))
+            ELSE location_raw
+        END as city,
+        
+        -- Extract country (after comma)
+        CASE 
+            WHEN POSITION(',' IN location_raw) > 0 
+            THEN TRIM(SUBSTRING(location_raw, POSITION(',' IN location_raw) + 1))
+            ELSE 'Not Specified'
+        END as country,
+        
+        -- Detect if remote
+        CASE 
+            WHEN location_raw LIKE '%remote%' 
+            THEN 'Remote'
+            ELSE 'On-site'
+        END as work_location_type
+    FROM jobs
+),
+
+ranked_locations AS (
+    SELECT
+        ROW_NUMBER() OVER (ORDER BY location_raw) as location_id,
+        location_raw,
+        city,
+        country,
+        work_location_type,
+        NOW() as created_at
+    FROM location_parsed
+)
+
+SELECT
+    location_id,
+    location_raw,
+    city,
+    country,
+    work_location_type,
+    created_at
+FROM ranked_locations
+ORDER BY location_id
+    );
+  
+  
+[0m19:29:02.062306 [debug] [Thread-1  ]: On model.job_intelligent.dim_time: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_time"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."dim_time__dbt_tmp"
+  
+    as (
+      -- models/gold/dim_time.sql
+-- Gold layer: Dimension Time
+
+
+
+-- Generate a date dimension for time-based analysis
+WITH date_spine AS (
+    SELECT
+        published_date,
+        EXTRACT(YEAR FROM published_date) as year,
+        EXTRACT(MONTH FROM published_date) as month,
+        EXTRACT(QUARTER FROM published_date) as quarter,
+        EXTRACT(WEEK FROM published_date) as week,
+        EXTRACT(DAYOFWEEK FROM published_date) as day_of_week,
+        DATE_TRUNC('month', published_date) as month_start,
+        DATE_TRUNC('quarter', published_date) as quarter_start,
+        DATE_TRUNC('year', published_date) as year_start,
+        
+        CASE 
+            WHEN EXTRACT(MONTH FROM published_date) IN (1,2,3) THEN 'Q1'
+            WHEN EXTRACT(MONTH FROM published_date) IN (4,5,6) THEN 'Q2'
+            WHEN EXTRACT(MONTH FROM published_date) IN (7,8,9) THEN 'Q3'
+            ELSE 'Q4'
+        END as quarter_name,
+        
+        CASE EXTRACT(DAYOFWEEK FROM published_date)
+            WHEN 0 THEN 'Sunday'
+            WHEN 1 THEN 'Monday'
+            WHEN 2 THEN 'Tuesday'
+            WHEN 3 THEN 'Wednesday'
+            WHEN 4 THEN 'Thursday'
+            WHEN 5 THEN 'Friday'
+            WHEN 6 THEN 'Saturday'
+        END as day_name,
+        
+        CASE EXTRACT(MONTH FROM published_date)
+            WHEN 1 THEN 'January'
+            WHEN 2 THEN 'February'
+            WHEN 3 THEN 'March'
+            WHEN 4 THEN 'April'
+            WHEN 5 THEN 'May'
+            WHEN 6 THEN 'June'
+            WHEN 7 THEN 'July'
+            WHEN 8 THEN 'August'
+            WHEN 9 THEN 'September'
+            WHEN 10 THEN 'October'
+            WHEN 11 THEN 'November'
+            WHEN 12 THEN 'December'
+        END as month_name
+        
+    FROM (
+        SELECT DISTINCT published_date
+        FROM "duckdb"."main_silver"."int_job_title_normalization"
+        WHERE published_date IS NOT NULL
+    )
+)
+
+SELECT
+    published_date as date_id,
+    year,
+    month,
+    quarter,
+    week,
+    day_of_week,
+    day_name,
+    month_name,
+    quarter_name,
+    month_start,
+    quarter_start,
+    year_start,
+    NOW() as created_at
+FROM date_spine
+ORDER BY published_date
+    );
+  
+  
+[0m19:29:02.062306 [debug] [Thread-2  ]: On model.job_intelligent.int_skills_extraction: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_skills_extraction"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_silver"."int_skills_extraction__dbt_tmp"
+  
+    as (
+      -- models/silver/int_skills_extraction.sql
+-- Silver layer: Extraction des compétences depuis la description
+
+
+
+WITH jobs_with_titles AS (
+    SELECT * FROM "duckdb"."main_silver"."int_job_title_normalization"
+),
+
+skills_mapping AS (
+    -- Définir un mapping de compétences communes Data/Tech
+    SELECT
+        'Python' as skill_name,
+        'python|py |\.py' as skill_pattern
+    UNION ALL SELECT 'SQL', 'sql|sql|sql server|postgres|oracle'
+    UNION ALL SELECT 'Spark', 'spark|pyspark'
+    UNION ALL SELECT 'Hadoop', 'hadoop|hdfs'
+    UNION ALL SELECT 'Scala', 'scala'
+    UNION ALL SELECT 'Java', '\bjava\b'
+    UNION ALL SELECT 'R', '\br\b|r programming'
+    UNION ALL SELECT 'Tableau', 'tableau'
+    UNION ALL SELECT 'Power BI', 'power bi|powerbi'
+    UNION ALL SELECT 'Looker', 'looker'
+    UNION ALL SELECT 'AWS', 'aws|amazon web|s3 |ec2|redshift'
+    UNION ALL SELECT 'Azure', 'azure|microsoft azure|synapse|cosmos'
+    UNION ALL SELECT 'GCP', 'gcp|google cloud|bigquery'
+    UNION ALL SELECT 'Airflow', 'airflow'
+    UNION ALL SELECT 'DBT', '\bdbt\b|dbt'
+    UNION ALL SELECT 'Kubernetes', 'kubernetes|k8s'
+    UNION ALL SELECT 'Docker', 'docker'
+    UNION ALL SELECT 'Git', 'git|github|gitlab'
+    UNION ALL SELECT 'TensorFlow', 'tensorflow'
+    UNION ALL SELECT 'PyTorch', 'pytorch'
+    UNION ALL SELECT 'Scikit-learn', 'scikit|sklearn'
+    UNION ALL SELECT 'Pandas', 'pandas'
+    UNION ALL SELECT 'NumPy', 'numpy'
+    UNION ALL SELECT 'Machine Learning', 'machine learning|deep learning|ml|artificial intelligence'
+    UNION ALL SELECT 'Statistics', 'statistics|statistical|probability'
+    UNION ALL SELECT 'Data Visualization', 'data visualization|visualization|charts|graphs'
+),
+
+jobs_exploded AS (
+    SELECT
+        j.*,
+        s.skill_name,
+        CASE 
+            WHEN job_description_cleaned ILIKE '%' || s.skill_pattern || '%' THEN 1 
+            ELSE 0 
+        END as has_skill
+    FROM jobs_with_titles j
+    CROSS JOIN skills_mapping s
+)
+
+SELECT
+    *
+FROM jobs_exploded
+WHERE has_skill = 1
+
+ORDER BY job_title_cleaned, published_date DESC
+    );
+  
+  
+[0m19:29:02.070179 [debug] [Thread-4  ]: SQL status: OK in 0.010 seconds
+[0m19:29:02.078273 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_company"
+[0m19:29:02.078273 [debug] [Thread-4  ]: On model.job_intelligent.dim_company: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_company"} */
+alter table "duckdb"."main_gold"."dim_company__dbt_tmp" rename to "dim_company"
+[0m19:29:02.081890 [debug] [Thread-3  ]: SQL status: OK in 0.017 seconds
+[0m19:29:02.081890 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.dim_location"
+[0m19:29:02.081890 [debug] [Thread-4  ]: SQL status: OK in 0.006 seconds
+[0m19:29:02.081890 [debug] [Thread-1  ]: SQL status: OK in 0.021 seconds
+[0m19:29:02.089658 [debug] [Thread-3  ]: On model.job_intelligent.dim_location: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_location"} */
+alter table "duckdb"."main_gold"."dim_location__dbt_tmp" rename to "dim_location"
+[0m19:29:02.092412 [debug] [Thread-4  ]: On model.job_intelligent.dim_company: COMMIT
+[0m19:29:02.092412 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.dim_time"
+[0m19:29:02.092412 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_company"
+[0m19:29:02.092412 [debug] [Thread-3  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.092412 [debug] [Thread-1  ]: On model.job_intelligent.dim_time: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_time"} */
+alter table "duckdb"."main_gold"."dim_time__dbt_tmp" rename to "dim_time"
+[0m19:29:02.092412 [debug] [Thread-4  ]: On model.job_intelligent.dim_company: COMMIT
+[0m19:29:02.104584 [debug] [Thread-3  ]: On model.job_intelligent.dim_location: COMMIT
+[0m19:29:02.105592 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.105592 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.dim_location"
+[0m19:29:02.105592 [debug] [Thread-1  ]: On model.job_intelligent.dim_time: COMMIT
+[0m19:29:02.105592 [debug] [Thread-4  ]: SQL status: OK in 0.004 seconds
+[0m19:29:02.105592 [debug] [Thread-3  ]: On model.job_intelligent.dim_location: COMMIT
+[0m19:29:02.105592 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.dim_time"
+[0m19:29:02.105592 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_company"
+[0m19:29:02.105592 [debug] [Thread-1  ]: On model.job_intelligent.dim_time: COMMIT
+[0m19:29:02.105592 [debug] [Thread-4  ]: On model.job_intelligent.dim_company: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_company"} */
+
+      drop table if exists "duckdb"."main_gold"."dim_company__dbt_backup" cascade
+    
+[0m19:29:02.121570 [debug] [Thread-3  ]: SQL status: OK in 0.003 seconds
+[0m19:29:02.125981 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.dim_location"
+[0m19:29:02.125981 [debug] [Thread-4  ]: SQL status: OK in 0.006 seconds
+[0m19:29:02.130015 [debug] [Thread-1  ]: SQL status: OK in 0.007 seconds
+[0m19:29:02.130015 [debug] [Thread-3  ]: On model.job_intelligent.dim_location: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_location"} */
+
+      drop table if exists "duckdb"."main_gold"."dim_location__dbt_backup" cascade
+    
+[0m19:29:02.132775 [debug] [Thread-4  ]: On model.job_intelligent.dim_company: Close
+[0m19:29:02.138089 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.dim_time"
+[0m19:29:02.138089 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592B2A3E20>]}
+[0m19:29:02.138089 [debug] [Thread-3  ]: SQL status: OK in 0.002 seconds
+[0m19:29:02.138089 [debug] [Thread-1  ]: On model.job_intelligent.dim_time: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_time"} */
+
+      drop table if exists "duckdb"."main_gold"."dim_time__dbt_backup" cascade
+    
+[0m19:29:02.142513 [info ] [Thread-4  ]: 4 of 13 OK created sql table model main_gold.dim_company ....................... [[32mOK[0m in 0.21s]
+[0m19:29:02.142513 [debug] [Thread-3  ]: On model.job_intelligent.dim_location: Close
+[0m19:29:02.142513 [debug] [Thread-4  ]: Finished running node model.job_intelligent.dim_company
+[0m19:29:02.142513 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m19:29:02.142513 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F21DA30>]}
+[0m19:29:02.142513 [debug] [Thread-1  ]: On model.job_intelligent.dim_time: Close
+[0m19:29:02.142513 [info ] [Thread-3  ]: 5 of 13 OK created sql table model main_gold.dim_location ...................... [[32mOK[0m in 0.21s]
+[0m19:29:02.154134 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F252C40>]}
+[0m19:29:02.157142 [debug] [Thread-3  ]: Finished running node model.job_intelligent.dim_location
+[0m19:29:02.157142 [info ] [Thread-1  ]: 6 of 13 OK created sql table model main_gold.dim_time .......................... [[32mOK[0m in 0.22s]
+[0m19:29:02.157142 [debug] [Thread-1  ]: Finished running node model.job_intelligent.dim_time
+[0m19:29:02.157142 [debug] [Thread-4  ]: Began running node model.job_intelligent.fact_job_offers
+[0m19:29:02.157142 [info ] [Thread-4  ]: 8 of 13 START sql table model main_gold.fact_job_offers ........................ [RUN]
+[0m19:29:02.157142 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly model.job_intelligent.dim_company, now model.job_intelligent.fact_job_offers)
+[0m19:29:02.157142 [debug] [Thread-4  ]: Began compiling node model.job_intelligent.fact_job_offers
+[0m19:29:02.170032 [debug] [Thread-4  ]: Writing injected SQL for node "model.job_intelligent.fact_job_offers"
+[0m19:29:02.170032 [debug] [Thread-4  ]: Began executing node model.job_intelligent.fact_job_offers
+[0m19:29:02.179612 [debug] [Thread-4  ]: Writing runtime sql for node "model.job_intelligent.fact_job_offers"
+[0m19:29:02.179612 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.fact_job_offers"
+[0m19:29:02.182272 [debug] [Thread-4  ]: On model.job_intelligent.fact_job_offers: BEGIN
+[0m19:29:02.184280 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+[0m19:29:02.184280 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.186029 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.fact_job_offers"
+[0m19:29:02.186029 [debug] [Thread-4  ]: On model.job_intelligent.fact_job_offers: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.fact_job_offers"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."fact_job_offers__dbt_tmp"
+  
+    as (
+      -- models/gold/fact_job_offers.sql
+-- Gold layer: Fact Table - Job Offers (Schéma en Étoile)
+
+
+
+WITH jobs AS (
+    SELECT
+        j.*
+    FROM "duckdb"."main_silver"."int_job_title_normalization" j
+),
+
+companies AS (
+    SELECT * FROM "duckdb"."main_gold"."dim_company"
+),
+
+locations AS (
+    SELECT * FROM "duckdb"."main_gold"."dim_location"
+),
+
+times AS (
+    SELECT * FROM "duckdb"."main_gold"."dim_time"
+),
+
+fact_table AS (
+    SELECT
+        -- Surrogate keys
+        ROW_NUMBER() OVER (ORDER BY j.job_url, j.company_name_cleaned) as job_offer_id,
+        
+        -- Foreign keys
+        c.company_id,
+        l.location_id,
+        t.date_id as published_date_id,
+        
+        -- Job dimensions
+        j.job_title_cleaned as job_title,
+        j.job_category,
+        j.contract_type_normalized as contract_type,
+        j.work_type_normalized as work_type,
+        
+        -- URLs
+        j.job_url,
+        j.company_url,
+        
+        -- Description
+        j.job_description_cleaned as job_description,
+        
+        -- Time dimension
+        j.published_date,
+        j.posted_time,
+        j.published_year_month,
+        j.published_year,
+        j.published_month,
+        
+        -- Metrics
+        LENGTH(j.job_description_cleaned) as description_length,
+        (LENGTH(j.job_description_cleaned) - LENGTH(REPLACE(j.job_description_cleaned, ' ', ''))) + 1 as word_count,
+        
+        -- Flags
+        CASE WHEN j.work_type_normalized = 'Remote' THEN 1 ELSE 0 END as is_remote,
+        CASE WHEN j.contract_type_normalized = 'Permanent' THEN 1 ELSE 0 END as is_permanent,
+        
+        -- Metadata
+        NOW() as created_at,
+        j.ingestion_timestamp
+        
+    FROM jobs j
+    LEFT JOIN companies c ON j.company_name_cleaned = c.company_name
+    LEFT JOIN locations l ON j.location_cleaned = l.location_raw
+    LEFT JOIN times t ON j.published_date = t.date_id
+)
+
+SELECT
+    job_offer_id,
+    company_id,
+    location_id,
+    published_date_id,
+    job_title,
+    job_category,
+    contract_type,
+    work_type,
+    job_url,
+    company_url,
+    job_description,
+    published_date,
+    posted_time,
+    published_year_month,
+    published_year,
+    published_month,
+    description_length,
+    word_count,
+    is_remote,
+    is_permanent,
+    created_at,
+    ingestion_timestamp
+FROM fact_table
+ORDER BY published_date DESC, job_offer_id
+    );
+  
+  
+[0m19:29:02.361537 [debug] [Thread-4  ]: SQL status: OK in 0.174 seconds
+[0m19:29:02.369562 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.fact_job_offers"
+[0m19:29:02.369562 [debug] [Thread-4  ]: On model.job_intelligent.fact_job_offers: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.fact_job_offers"} */
+alter table "duckdb"."main_gold"."fact_job_offers__dbt_tmp" rename to "fact_job_offers"
+[0m19:29:02.369562 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.369562 [debug] [Thread-4  ]: On model.job_intelligent.fact_job_offers: COMMIT
+[0m19:29:02.375170 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.fact_job_offers"
+[0m19:29:02.375170 [debug] [Thread-4  ]: On model.job_intelligent.fact_job_offers: COMMIT
+[0m19:29:02.421715 [debug] [Thread-4  ]: SQL status: OK in 0.045 seconds
+[0m19:29:02.425177 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.fact_job_offers"
+[0m19:29:02.427182 [debug] [Thread-4  ]: On model.job_intelligent.fact_job_offers: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.fact_job_offers"} */
+
+      drop table if exists "duckdb"."main_gold"."fact_job_offers__dbt_backup" cascade
+    
+[0m19:29:02.427182 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.427182 [debug] [Thread-4  ]: On model.job_intelligent.fact_job_offers: Close
+[0m19:29:02.427182 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F122FD0>]}
+[0m19:29:02.427182 [info ] [Thread-4  ]: 8 of 13 OK created sql table model main_gold.fact_job_offers ................... [[32mOK[0m in 0.27s]
+[0m19:29:02.434558 [debug] [Thread-4  ]: Finished running node model.job_intelligent.fact_job_offers
+[0m19:29:02.434558 [debug] [Thread-1  ]: Began running node model.job_intelligent.agg_job_offers_by_category_time
+[0m19:29:02.434558 [debug] [Thread-3  ]: Began running node model.job_intelligent.agg_location_analysis
+[0m19:29:02.434558 [info ] [Thread-1  ]: 9 of 13 START sql table model main_gold.agg_job_offers_by_category_time ........ [RUN]
+[0m19:29:02.434558 [info ] [Thread-3  ]: 10 of 13 START sql table model main_gold.agg_location_analysis ................. [RUN]
+[0m19:29:02.438528 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.job_intelligent.dim_time, now model.job_intelligent.agg_job_offers_by_category_time)
+[0m19:29:02.438528 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.job_intelligent.dim_location, now model.job_intelligent.agg_location_analysis)
+[0m19:29:02.438528 [debug] [Thread-1  ]: Began compiling node model.job_intelligent.agg_job_offers_by_category_time
+[0m19:29:02.438528 [debug] [Thread-3  ]: Began compiling node model.job_intelligent.agg_location_analysis
+[0m19:29:02.445807 [debug] [Thread-1  ]: Writing injected SQL for node "model.job_intelligent.agg_job_offers_by_category_time"
+[0m19:29:02.450104 [debug] [Thread-3  ]: Writing injected SQL for node "model.job_intelligent.agg_location_analysis"
+[0m19:29:02.450104 [debug] [Thread-1  ]: Began executing node model.job_intelligent.agg_job_offers_by_category_time
+[0m19:29:02.453690 [debug] [Thread-1  ]: Writing runtime sql for node "model.job_intelligent.agg_job_offers_by_category_time"
+[0m19:29:02.453690 [debug] [Thread-3  ]: Began executing node model.job_intelligent.agg_location_analysis
+[0m19:29:02.453690 [debug] [Thread-3  ]: Writing runtime sql for node "model.job_intelligent.agg_location_analysis"
+[0m19:29:02.453690 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_job_offers_by_category_time"
+[0m19:29:02.453690 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.agg_location_analysis"
+[0m19:29:02.453690 [debug] [Thread-1  ]: On model.job_intelligent.agg_job_offers_by_category_time: BEGIN
+[0m19:29:02.453690 [debug] [Thread-3  ]: On model.job_intelligent.agg_location_analysis: BEGIN
+[0m19:29:02.453690 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:29:02.453690 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m19:29:02.469730 [debug] [Thread-1  ]: SQL status: OK in 0.003 seconds
+[0m19:29:02.469730 [debug] [Thread-3  ]: SQL status: OK in 0.002 seconds
+[0m19:29:02.469730 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_job_offers_by_category_time"
+[0m19:29:02.469730 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.agg_location_analysis"
+[0m19:29:02.469730 [debug] [Thread-1  ]: On model.job_intelligent.agg_job_offers_by_category_time: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_job_offers_by_category_time"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."agg_job_offers_by_category_time__dbt_tmp"
+  
+    as (
+      -- models/gold/agg_job_offers_by_category_time.sql
+-- Gold layer: Aggregate - Job Offers by Category and Time
+
+
+
+SELECT
+    f.published_year,
+    f.published_month,
+    f.published_year_month,
+    f.job_category,
+    f.contract_type,
+    f.work_type,
+    
+    COUNT(DISTINCT f.job_offer_id) as count_job_offers,
+    COUNT(DISTINCT f.company_id) as count_companies,
+    
+    AVG(f.description_length) as avg_description_length,
+    AVG(f.word_count) as avg_word_count,
+    
+    SUM(CASE WHEN f.is_remote = 1 THEN 1 ELSE 0 END) as remote_jobs,
+    SUM(CASE WHEN f.is_permanent = 1 THEN 1 ELSE 0 END) as permanent_jobs,
+    
+    NOW() as created_at
+    
+FROM "duckdb"."main_gold"."fact_job_offers" f
+WHERE f.published_date IS NOT NULL
+GROUP BY
+    f.published_year,
+    f.published_month,
+    f.published_year_month,
+    f.job_category,
+    f.contract_type,
+    f.work_type
+ORDER BY f.published_year_month DESC, f.job_category
+    );
+  
+  
+[0m19:29:02.469730 [debug] [Thread-3  ]: On model.job_intelligent.agg_location_analysis: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_location_analysis"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."agg_location_analysis__dbt_tmp"
+  
+    as (
+      -- models/gold/agg_location_analysis.sql
+-- Gold layer: Aggregate - Location Analysis
+
+
+
+SELECT
+    dl.location_id,
+    dl.location_raw,
+    dl.city,
+    dl.country,
+    dl.work_location_type,
+    
+    COUNT(DISTINCT f.job_offer_id) as count_job_offers,
+    COUNT(DISTINCT f.company_id) as count_companies,
+    
+    -- Distribution by job category
+    COUNT(DISTINCT CASE WHEN f.job_category = 'Data Engineer' THEN f.job_offer_id END) as data_engineer_count,
+    COUNT(DISTINCT CASE WHEN f.job_category = 'Data Scientist' THEN f.job_offer_id END) as data_scientist_count,
+    COUNT(DISTINCT CASE WHEN f.job_category = 'Data Analyst' THEN f.job_offer_id END) as data_analyst_count,
+    COUNT(DISTINCT CASE WHEN f.job_category = 'ML Engineer' THEN f.job_offer_id END) as ml_engineer_count,
+    
+    -- Remote percentage
+    ROUND(
+        100.0 * SUM(CASE WHEN f.is_remote = 1 THEN 1 ELSE 0 END) / COUNT(DISTINCT f.job_offer_id),
+        2
+    ) as pct_remote,
+    
+    NOW() as created_at
+    
+FROM "duckdb"."main_gold"."dim_location" dl
+LEFT JOIN "duckdb"."main_gold"."fact_job_offers" f ON dl.location_id = f.location_id
+GROUP BY
+    dl.location_id,
+    dl.location_raw,
+    dl.city,
+    dl.country,
+    dl.work_location_type
+ORDER BY count_job_offers DESC
+    );
+  
+  
+[0m19:29:02.486503 [debug] [Thread-1  ]: SQL status: OK in 0.014 seconds
+[0m19:29:02.496936 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_job_offers_by_category_time"
+[0m19:29:02.500505 [debug] [Thread-1  ]: On model.job_intelligent.agg_job_offers_by_category_time: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_job_offers_by_category_time"} */
+alter table "duckdb"."main_gold"."agg_job_offers_by_category_time__dbt_tmp" rename to "agg_job_offers_by_category_time"
+[0m19:29:02.503946 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m19:29:02.505955 [debug] [Thread-1  ]: On model.job_intelligent.agg_job_offers_by_category_time: COMMIT
+[0m19:29:02.507962 [debug] [Thread-3  ]: SQL status: OK in 0.032 seconds
+[0m19:29:02.507962 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_job_offers_by_category_time"
+[0m19:29:02.565674 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.agg_location_analysis"
+[0m19:29:02.565674 [debug] [Thread-1  ]: On model.job_intelligent.agg_job_offers_by_category_time: COMMIT
+[0m19:29:02.565674 [debug] [Thread-3  ]: On model.job_intelligent.agg_location_analysis: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_location_analysis"} */
+alter table "duckdb"."main_gold"."agg_location_analysis__dbt_tmp" rename to "agg_location_analysis"
+[0m19:29:02.565674 [debug] [Thread-3  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.572327 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m19:29:02.574338 [debug] [Thread-3  ]: On model.job_intelligent.agg_location_analysis: COMMIT
+[0m19:29:02.578351 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_job_offers_by_category_time"
+[0m19:29:02.578351 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.agg_location_analysis"
+[0m19:29:02.580358 [debug] [Thread-1  ]: On model.job_intelligent.agg_job_offers_by_category_time: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_job_offers_by_category_time"} */
+
+      drop table if exists "duckdb"."main_gold"."agg_job_offers_by_category_time__dbt_backup" cascade
+    
+[0m19:29:02.580358 [debug] [Thread-3  ]: On model.job_intelligent.agg_location_analysis: COMMIT
+[0m19:29:02.581364 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.584769 [debug] [Thread-1  ]: On model.job_intelligent.agg_job_offers_by_category_time: Close
+[0m19:29:02.586779 [debug] [Thread-3  ]: SQL status: OK in 0.004 seconds
+[0m19:29:02.588790 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F3D4940>]}
+[0m19:29:02.590801 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.agg_location_analysis"
+[0m19:29:02.590801 [info ] [Thread-1  ]: 9 of 13 OK created sql table model main_gold.agg_job_offers_by_category_time ... [[32mOK[0m in 0.15s]
+[0m19:29:02.590801 [debug] [Thread-3  ]: On model.job_intelligent.agg_location_analysis: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_location_analysis"} */
+
+      drop table if exists "duckdb"."main_gold"."agg_location_analysis__dbt_backup" cascade
+    
+[0m19:29:02.597159 [debug] [Thread-1  ]: Finished running node model.job_intelligent.agg_job_offers_by_category_time
+[0m19:29:02.599170 [debug] [Thread-3  ]: SQL status: OK in 0.001 seconds
+[0m19:29:02.599170 [debug] [Thread-3  ]: On model.job_intelligent.agg_location_analysis: Close
+[0m19:29:02.601743 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F386430>]}
+[0m19:29:02.601743 [info ] [Thread-3  ]: 10 of 13 OK created sql table model main_gold.agg_location_analysis ............ [[32mOK[0m in 0.16s]
+[0m19:29:02.601743 [debug] [Thread-3  ]: Finished running node model.job_intelligent.agg_location_analysis
+[0m19:29:04.610442 [debug] [Thread-2  ]: SQL status: OK in 2.545 seconds
+[0m19:29:04.610442 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_skills_extraction"
+[0m19:29:04.610442 [debug] [Thread-2  ]: On model.job_intelligent.int_skills_extraction: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_skills_extraction"} */
+alter table "duckdb"."main_silver"."int_skills_extraction__dbt_tmp" rename to "int_skills_extraction"
+[0m19:29:04.623403 [debug] [Thread-2  ]: SQL status: OK in 0.001 seconds
+[0m19:29:04.625416 [debug] [Thread-2  ]: On model.job_intelligent.int_skills_extraction: COMMIT
+[0m19:29:04.629537 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_skills_extraction"
+[0m19:29:04.629537 [debug] [Thread-2  ]: On model.job_intelligent.int_skills_extraction: COMMIT
+[0m19:29:04.669165 [debug] [Thread-2  ]: SQL status: OK in 0.046 seconds
+[0m19:29:04.669165 [debug] [Thread-2  ]: Using duckdb connection "model.job_intelligent.int_skills_extraction"
+[0m19:29:04.669165 [debug] [Thread-2  ]: On model.job_intelligent.int_skills_extraction: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.int_skills_extraction"} */
+
+      drop table if exists "duckdb"."main_silver"."int_skills_extraction__dbt_backup" cascade
+    
+[0m19:29:04.684859 [debug] [Thread-2  ]: SQL status: OK in 0.001 seconds
+[0m19:29:04.688884 [debug] [Thread-2  ]: On model.job_intelligent.int_skills_extraction: Close
+[0m19:29:04.690895 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F2C1130>]}
+[0m19:29:04.692907 [info ] [Thread-2  ]: 7 of 13 OK created sql table model main_silver.int_skills_extraction ........... [[32mOK[0m in 2.75s]
+[0m19:29:04.694920 [debug] [Thread-2  ]: Finished running node model.job_intelligent.int_skills_extraction
+[0m19:29:04.694920 [debug] [Thread-4  ]: Began running node model.job_intelligent.dim_skills
+[0m19:29:04.696930 [info ] [Thread-4  ]: 11 of 13 START sql table model main_gold.dim_skills ............................ [RUN]
+[0m19:29:04.698941 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly model.job_intelligent.fact_job_offers, now model.job_intelligent.dim_skills)
+[0m19:29:04.698941 [debug] [Thread-4  ]: Began compiling node model.job_intelligent.dim_skills
+[0m19:29:04.701299 [debug] [Thread-4  ]: Writing injected SQL for node "model.job_intelligent.dim_skills"
+[0m19:29:04.701299 [debug] [Thread-4  ]: Began executing node model.job_intelligent.dim_skills
+[0m19:29:04.716674 [debug] [Thread-4  ]: Writing runtime sql for node "model.job_intelligent.dim_skills"
+[0m19:29:04.716674 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_skills"
+[0m19:29:04.723181 [debug] [Thread-4  ]: On model.job_intelligent.dim_skills: BEGIN
+[0m19:29:04.723181 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+[0m19:29:04.725293 [debug] [Thread-4  ]: SQL status: OK in 0.002 seconds
+[0m19:29:04.725293 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_skills"
+[0m19:29:04.725293 [debug] [Thread-4  ]: On model.job_intelligent.dim_skills: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_skills"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."dim_skills__dbt_tmp"
+  
+    as (
+      -- models/gold/dim_skills.sql
+-- Gold layer: Dimension Skills
+
+
+
+WITH skills AS (
+    SELECT DISTINCT
+        skill_name
+    FROM "duckdb"."main_silver"."int_skills_extraction"
+    WHERE skill_name IS NOT NULL
+),
+
+skill_categorization AS (
+    SELECT
+        skill_name,
+        CASE
+            WHEN skill_name IN ('Python', 'Java', 'Scala', 'R') THEN 'Programming Language'
+            WHEN skill_name IN ('SQL', 'NoSQL') THEN 'Database'
+            WHEN skill_name IN ('Spark', 'Hadoop', 'Hive', 'Kafka') THEN 'Big Data Framework'
+            WHEN skill_name IN ('TensorFlow', 'PyTorch', 'Scikit-learn') THEN 'ML/DL Library'
+            WHEN skill_name IN ('AWS', 'Azure', 'GCP') THEN 'Cloud Platform'
+            WHEN skill_name IN ('Tableau', 'Power BI', 'Looker') THEN 'BI Tool'
+            WHEN skill_name IN ('Airflow', 'DBT', 'Kubernetes', 'Docker') THEN 'DataOps/DevOps'
+            WHEN skill_name IN ('Pandas', 'NumPy', 'Matplotlib') THEN 'Data Analysis Library'
+            WHEN skill_name IN ('Machine Learning', 'Statistics', 'Data Visualization') THEN 'Domain Knowledge'
+            ELSE 'Other'
+        END as skill_category
+    FROM skills
+),
+
+ranked_skills AS (
+    SELECT
+        ROW_NUMBER() OVER (ORDER BY skill_name) as skill_id,
+        skill_name,
+        skill_category,
+        NOW() as created_at
+    FROM skill_categorization
+)
+
+SELECT
+    skill_id,
+    skill_name,
+    skill_category,
+    created_at
+FROM ranked_skills
+ORDER BY skill_id
+    );
+  
+  
+[0m19:29:04.733925 [debug] [Thread-4  ]: SQL status: OK in 0.005 seconds
+[0m19:29:04.738341 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_skills"
+[0m19:29:04.738341 [debug] [Thread-4  ]: On model.job_intelligent.dim_skills: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_skills"} */
+alter table "duckdb"."main_gold"."dim_skills__dbt_tmp" rename to "dim_skills"
+[0m19:29:04.738341 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m19:29:04.738341 [debug] [Thread-4  ]: On model.job_intelligent.dim_skills: COMMIT
+[0m19:29:04.738341 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_skills"
+[0m19:29:04.748968 [debug] [Thread-4  ]: On model.job_intelligent.dim_skills: COMMIT
+[0m19:29:05.178246 [debug] [Thread-4  ]: SQL status: OK in 0.428 seconds
+[0m19:29:05.186045 [debug] [Thread-4  ]: Using duckdb connection "model.job_intelligent.dim_skills"
+[0m19:29:05.188056 [debug] [Thread-4  ]: On model.job_intelligent.dim_skills: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.dim_skills"} */
+
+      drop table if exists "duckdb"."main_gold"."dim_skills__dbt_backup" cascade
+    
+[0m19:29:05.188056 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m19:29:05.191192 [debug] [Thread-4  ]: On model.job_intelligent.dim_skills: Close
+[0m19:29:05.193204 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592ED82A00>]}
+[0m19:29:05.193204 [info ] [Thread-4  ]: 11 of 13 OK created sql table model main_gold.dim_skills ....................... [[32mOK[0m in 0.49s]
+[0m19:29:05.195212 [debug] [Thread-4  ]: Finished running node model.job_intelligent.dim_skills
+[0m19:29:05.195212 [debug] [Thread-3  ]: Began running node model.job_intelligent.fact_job_skills
+[0m19:29:05.195212 [info ] [Thread-3  ]: 12 of 13 START sql table model main_gold.fact_job_skills ....................... [RUN]
+[0m19:29:05.198529 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.job_intelligent.agg_location_analysis, now model.job_intelligent.fact_job_skills)
+[0m19:29:05.198529 [debug] [Thread-3  ]: Began compiling node model.job_intelligent.fact_job_skills
+[0m19:29:05.203727 [debug] [Thread-3  ]: Writing injected SQL for node "model.job_intelligent.fact_job_skills"
+[0m19:29:05.205734 [debug] [Thread-3  ]: Began executing node model.job_intelligent.fact_job_skills
+[0m19:29:05.209751 [debug] [Thread-3  ]: Writing runtime sql for node "model.job_intelligent.fact_job_skills"
+[0m19:29:05.211758 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.fact_job_skills"
+[0m19:29:05.211758 [debug] [Thread-3  ]: On model.job_intelligent.fact_job_skills: BEGIN
+[0m19:29:05.213509 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m19:29:05.213509 [debug] [Thread-3  ]: SQL status: OK in 0.002 seconds
+[0m19:29:05.213509 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.fact_job_skills"
+[0m19:29:05.213509 [debug] [Thread-3  ]: On model.job_intelligent.fact_job_skills: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.fact_job_skills"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."fact_job_skills__dbt_tmp"
+  
+    as (
+      -- models/gold/fact_job_skills.sql
+-- Gold layer: Bridge Table - Job Skills
+
+
+
+WITH skills_raw AS (
+    SELECT DISTINCT
+        job_url,
+        company_name_cleaned,
+        skill_name
+    FROM "duckdb"."main_silver"."int_skills_extraction"
+),
+
+jobs AS (
+    SELECT
+        job_offer_id,
+        job_url
+    FROM "duckdb"."main_gold"."fact_job_offers"
+),
+
+skills_dim AS (
+    SELECT
+        skill_id,
+        skill_name
+    FROM "duckdb"."main_gold"."dim_skills"
+),
+
+fact_table AS (
+    SELECT
+        ROW_NUMBER() OVER (ORDER BY s.job_url, sd.skill_id) as job_skill_id,
+        j.job_offer_id,
+        sd.skill_id,
+        s.skill_name,
+        NOW() as created_at
+    FROM skills_raw s
+    LEFT JOIN jobs j ON s.job_url = j.job_url
+    LEFT JOIN skills_dim sd ON s.skill_name = sd.skill_name
+)
+
+SELECT
+    job_skill_id,
+    job_offer_id,
+    skill_id,
+    skill_name,
+    created_at
+FROM fact_table
+WHERE job_offer_id IS NOT NULL
+ORDER BY job_offer_id, skill_id
+    );
+  
+  
+[0m19:29:05.229598 [debug] [Thread-3  ]: SQL status: OK in 0.013 seconds
+[0m19:29:05.229598 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.fact_job_skills"
+[0m19:29:05.229598 [debug] [Thread-3  ]: On model.job_intelligent.fact_job_skills: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.fact_job_skills"} */
+alter table "duckdb"."main_gold"."fact_job_skills__dbt_tmp" rename to "fact_job_skills"
+[0m19:29:05.229598 [debug] [Thread-3  ]: SQL status: OK in 0.000 seconds
+[0m19:29:05.229598 [debug] [Thread-3  ]: On model.job_intelligent.fact_job_skills: COMMIT
+[0m19:29:05.229598 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.fact_job_skills"
+[0m19:29:05.229598 [debug] [Thread-3  ]: On model.job_intelligent.fact_job_skills: COMMIT
+[0m19:29:05.245357 [debug] [Thread-3  ]: SQL status: OK in 0.004 seconds
+[0m19:29:05.245357 [debug] [Thread-3  ]: Using duckdb connection "model.job_intelligent.fact_job_skills"
+[0m19:29:05.245357 [debug] [Thread-3  ]: On model.job_intelligent.fact_job_skills: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.fact_job_skills"} */
+
+      drop table if exists "duckdb"."main_gold"."fact_job_skills__dbt_backup" cascade
+    
+[0m19:29:05.245357 [debug] [Thread-3  ]: SQL status: OK in 0.000 seconds
+[0m19:29:05.245357 [debug] [Thread-3  ]: On model.job_intelligent.fact_job_skills: Close
+[0m19:29:05.245357 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F2DDD90>]}
+[0m19:29:05.245357 [info ] [Thread-3  ]: 12 of 13 OK created sql table model main_gold.fact_job_skills .................. [[32mOK[0m in 0.05s]
+[0m19:29:05.245357 [debug] [Thread-3  ]: Finished running node model.job_intelligent.fact_job_skills
+[0m19:29:05.261281 [debug] [Thread-1  ]: Began running node model.job_intelligent.agg_skills_demand
+[0m19:29:05.261281 [info ] [Thread-1  ]: 13 of 13 START sql table model main_gold.agg_skills_demand ..................... [RUN]
+[0m19:29:05.261281 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.job_intelligent.agg_job_offers_by_category_time, now model.job_intelligent.agg_skills_demand)
+[0m19:29:05.261281 [debug] [Thread-1  ]: Began compiling node model.job_intelligent.agg_skills_demand
+[0m19:29:05.261281 [debug] [Thread-1  ]: Writing injected SQL for node "model.job_intelligent.agg_skills_demand"
+[0m19:29:05.277361 [debug] [Thread-1  ]: Began executing node model.job_intelligent.agg_skills_demand
+[0m19:29:05.277361 [debug] [Thread-1  ]: Writing runtime sql for node "model.job_intelligent.agg_skills_demand"
+[0m19:29:05.277361 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_skills_demand"
+[0m19:29:05.277361 [debug] [Thread-1  ]: On model.job_intelligent.agg_skills_demand: BEGIN
+[0m19:29:05.277361 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:29:05.277361 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m19:29:05.277361 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_skills_demand"
+[0m19:29:05.287919 [debug] [Thread-1  ]: On model.job_intelligent.agg_skills_demand: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_skills_demand"} */
+
+  
+    
+    
+
+    create  table
+      "duckdb"."main_gold"."agg_skills_demand__dbt_tmp"
+  
+    as (
+      -- models/gold/agg_skills_demand.sql
+-- Gold layer: Aggregate - Skills in Demand
+
+
+
+SELECT
+    sd.skill_id,
+    sd.skill_name,
+    sd.skill_category,
+    
+    COUNT(DISTINCT fs.job_offer_id) as count_jobs_requiring_skill,
+    COUNT(DISTINCT f.company_id) as count_companies_requiring_skill,
+    
+    -- Percentage of all jobs
+    ROUND(
+        100.0 * COUNT(DISTINCT fs.job_offer_id) / (
+            SELECT COUNT(DISTINCT job_offer_id) FROM "duckdb"."main_gold"."fact_job_offers"
+        ),
+        2
+    ) as pct_of_total_jobs,
+    
+    -- Average job details for jobs requiring this skill
+    AVG(f.description_length) as avg_description_length,
+    AVG(f.word_count) as avg_word_count,
+    
+    NOW() as created_at
+    
+FROM "duckdb"."main_gold"."dim_skills" sd
+LEFT JOIN "duckdb"."main_gold"."fact_job_skills" fs ON sd.skill_id = fs.skill_id
+LEFT JOIN "duckdb"."main_gold"."fact_job_offers" f ON fs.job_offer_id = f.job_offer_id
+GROUP BY
+    sd.skill_id,
+    sd.skill_name,
+    sd.skill_category
+ORDER BY count_jobs_requiring_skill DESC
+    );
+  
+  
+[0m19:29:05.304392 [debug] [Thread-1  ]: SQL status: OK in 0.016 seconds
+[0m19:29:05.310633 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_skills_demand"
+[0m19:29:05.310633 [debug] [Thread-1  ]: On model.job_intelligent.agg_skills_demand: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_skills_demand"} */
+alter table "duckdb"."main_gold"."agg_skills_demand__dbt_tmp" rename to "agg_skills_demand"
+[0m19:29:05.310633 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m19:29:05.310633 [debug] [Thread-1  ]: On model.job_intelligent.agg_skills_demand: COMMIT
+[0m19:29:05.310633 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_skills_demand"
+[0m19:29:05.310633 [debug] [Thread-1  ]: On model.job_intelligent.agg_skills_demand: COMMIT
+[0m19:29:05.310633 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m19:29:05.325723 [debug] [Thread-1  ]: Using duckdb connection "model.job_intelligent.agg_skills_demand"
+[0m19:29:05.325723 [debug] [Thread-1  ]: On model.job_intelligent.agg_skills_demand: /* {"app": "dbt", "dbt_version": "1.10.18", "profile_name": "job_intelligent", "target_name": "dev", "node_id": "model.job_intelligent.agg_skills_demand"} */
+
+      drop table if exists "duckdb"."main_gold"."agg_skills_demand__dbt_backup" cascade
+    
+[0m19:29:05.325723 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m19:29:05.325723 [debug] [Thread-1  ]: On model.job_intelligent.agg_skills_demand: Close
+[0m19:29:05.333536 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c3b9240-10fa-4d3c-8d63-0c03179d9aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592F3A20D0>]}
+[0m19:29:05.333536 [info ] [Thread-1  ]: 13 of 13 OK created sql table model main_gold.agg_skills_demand ................ [[32mOK[0m in 0.07s]
+[0m19:29:05.333536 [debug] [Thread-1  ]: Finished running node model.job_intelligent.agg_skills_demand
+[0m19:29:05.336930 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:29:05.336930 [debug] [MainThread]: On master: BEGIN
+[0m19:29:05.339152 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:29:05.339152 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m19:29:05.339152 [debug] [MainThread]: On master: COMMIT
+[0m19:29:05.341161 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:29:05.341161 [debug] [MainThread]: On master: COMMIT
+[0m19:29:05.342150 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:29:05.342150 [debug] [MainThread]: On master: Close
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'create_duckdb_main_bronze' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'create_duckdb_main_silver' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'create_duckdb_main_gold' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'list_duckdb_main_silver' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'list_duckdb_main_gold' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'list_duckdb_main_bronze' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'model.job_intelligent.agg_skills_demand' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'model.job_intelligent.fact_job_skills' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'model.job_intelligent.int_skills_extraction' was properly closed.
+[0m19:29:05.342150 [debug] [MainThread]: Connection 'model.job_intelligent.dim_skills' was properly closed.
+[0m19:29:05.342150 [info ] [MainThread]: 
+[0m19:29:05.342150 [info ] [MainThread]: Finished running 12 table models, 1 view model in 0 hours 0 minutes and 5.50 seconds (5.50s).
+[0m19:29:05.342150 [debug] [MainThread]: Command end result
+[0m19:29:05.384972 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\manifest.json
+[0m19:29:05.388735 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\semantic_manifest.json
+[0m19:29:05.389662 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\run_results.json
+[0m19:29:05.389662 [info ] [MainThread]: 
+[0m19:29:05.389662 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:29:05.389662 [info ] [MainThread]: 
+[0m19:29:05.389662 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=13
+[0m19:29:05.389662 [debug] [MainThread]: Command `dbt run` succeeded at 19:29:05.389662 after 10.94 seconds
+[0m19:29:05.389662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592C392190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592EB22C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592ADDEFD0>]}
+[0m19:29:05.389662 [debug] [MainThread]: Flushing usage events
+[0m19:29:06.480176 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:29:10.777241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029297F521F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292991A7F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292991A7EB0>]}
+
+
+============================== 19:29:10.777241 | 23546811-6f6f-4cf1-b953-0642fcded6c6 ==============================
+[0m19:29:10.777241 [info ] [MainThread]: Running with dbt=1.10.18
+[0m19:29:10.793242 [debug] [MainThread]: running dbt with arguments {'log_path': 'C:\\Users\\Ayoub Gorry\\Desktop\\powerbi\\jobs-power-bi\\dbt_project\\logs', 'log_format': 'default', 'partial_parse': 'True', 'log_cache_events': 'False', 'empty': 'None', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\Ayoub Gorry\\Desktop\\powerbi\\jobs-power-bi\\dbt_project', 'introspect': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'use_colors': 'True', 'quiet': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'write_json': 'True', 'indirect_selection': 'eager'}
+[0m19:29:11.438917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '23546811-6f6f-4cf1-b953-0642fcded6c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002929A2E3B50>]}
+[0m19:29:11.540449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '23546811-6f6f-4cf1-b953-0642fcded6c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029299205A90>]}
+[0m19:29:11.540449 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m19:29:11.985166 [debug] [MainThread]: checksum: 9646db7d1a5f5b9389d9c545d3ebf898b26bc1f63f6b5366f34a6af01d52cb91, vars: {}, profile: , target: , version: 1.10.18
+[0m19:29:12.287821 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:29:12.287821 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:29:12.305662 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds
+[0m19:29:12.337364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '23546811-6f6f-4cf1-b953-0642fcded6c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002929A87B130>]}
+[0m19:29:12.437698 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\manifest.json
+[0m19:29:12.446460 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\semantic_manifest.json
+[0m19:29:12.508330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '23546811-6f6f-4cf1-b953-0642fcded6c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002929A984670>]}
+[0m19:29:12.510078 [info ] [MainThread]: Found 13 models, 456 macros
+[0m19:29:12.510078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '23546811-6f6f-4cf1-b953-0642fcded6c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002929A8959A0>]}
+[0m19:29:12.512088 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:29:12.514096 [debug] [MainThread]: Command end result
+[0m19:29:12.545813 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\manifest.json
+[0m19:29:12.549834 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\semantic_manifest.json
+[0m19:29:12.555864 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\dbt_project\target\run_results.json
+[0m19:29:12.557617 [debug] [MainThread]: Command `dbt test` succeeded at 19:29:12.557617 after 1.95 seconds
+[0m19:29:12.561966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029297F521F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002929831A580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029296979AF0>]}
+[0m19:29:12.561966 [debug] [MainThread]: Flushing usage events
+[0m19:29:13.139394 [debug] [MainThread]: An error was encountered while trying to flush usage events

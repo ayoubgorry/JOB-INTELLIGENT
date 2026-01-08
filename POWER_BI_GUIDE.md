@@ -52,7 +52,7 @@ Une suite de 6 dashboards interactifs couvrant :
 Pour chaque table, procédez comme suit :
 
 1. Menu : **Accueil → Obtenir les données → Texte/CSV**
-2. Naviguez vers : `C:\path\to\job-intelligent\data\gold\`
+2. Naviguez vers : `C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\data\gold\`
 3. Sélectionnez le fichier CSV
 4. Cliquez sur **Charger**
 

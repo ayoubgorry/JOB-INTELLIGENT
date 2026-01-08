@@ -11,13 +11,14 @@ import shutil
 from pathlib import Path
 from datetime import datetime
 
-# Configuration
-PROJECT_ROOT = Path(__file__).parent
-DBT_PROJECT_PATH = PROJECT_ROOT / "dbt_project"
-DATA_PATH = PROJECT_ROOT / "data"
-GOLD_PATH = DATA_PATH / "gold"
-BRONZE_PATH = DATA_PATH / "bronze"
-SILVER_PATH = DATA_PATH / "silver"
+# Configuration - Project Paths
+PROJECT_ROOT = Path(__file__).parent  # Root directory of the project
+DBT_PROJECT_PATH = PROJECT_ROOT / "dbt_project"  # DBT project directory
+DATA_PATH = PROJECT_ROOT / "data"  # Data layers root directory
+BRONZE_LAYER_PATH = DATA_PATH / "bronze"  # Raw data layer (staging)
+SILVER_LAYER_PATH = DATA_PATH / "silver"  # Transformed data layer
+GOLD_LAYER_PATH = DATA_PATH / "gold"  # Analytics-ready data layer
+SOURCE_DATA_FILE = PROJECT_ROOT / "final_data.csv"  # Source data file
 
 # Colors for console output
 class Colors:
@@ -117,19 +118,23 @@ def initialize_dbt():
         return False
 
 def copy_source_data():
-    """Copy source data to bronze layer"""
+    """Copy source data from root to bronze layer"""
     print_section("Copying Source Data to Bronze Layer")
     
-    source_file = PROJECT_ROOT / "final_data.csv"
-    bronze_file = BRONZE_PATH / "final_data.csv"
+    source_file = SOURCE_DATA_FILE
+    bronze_output_path = BRONZE_LAYER_PATH / "final_data.csv"
     
     if not source_file.exists():
         print_error(f"Source file not found: {source_file}")
         return False
     
     try:
-        shutil.copy2(source_file, bronze_file)
-        print_success(f"Copied {source_file.name} to {BRONZE_PATH}")
+        # Ensure bronze directory exists
+        BRONZE_LAYER_PATH.mkdir(parents=True, exist_ok=True)
+        
+        # Copy file to bronze layer
+        shutil.copy2(source_file, bronze_output_path)
+        print_success(f"Copied {source_file.name} to {BRONZE_LAYER_PATH}")
         
         # Get file size
         size_mb = source_file.stat().st_size / (1024 * 1024)
@@ -170,7 +175,7 @@ def run_dbt_tests():
         return True  # Don't fail pipeline
 
 def export_to_csv():
-    """Export Gold tables to CSV"""
+    """Export Gold layer tables to CSV format"""
     print_section("Exporting Gold Layer to CSV")
     
     try:
@@ -181,18 +186,21 @@ def export_to_csv():
         return False
     
     try:
-        # Connect to DuckDB
-        db_path = DBT_PROJECT_PATH / "target" / "duckdb.db"
+        # Ensure gold directory exists
+        GOLD_LAYER_PATH.mkdir(parents=True, exist_ok=True)
         
-        if not db_path.exists():
-            print_warning(f"Database not found: {db_path}")
+        # Connect to DuckDB database
+        dbt_database_path = DBT_PROJECT_PATH / "target" / "duckdb.db"
+        
+        if not dbt_database_path.exists():
+            print_warning(f"Database not found: {dbt_database_path}")
             print_info("Using in-memory database instead")
-            conn = duckdb.connect(":memory:")
+            dbt_connection = duckdb.connect(":memory:")
         else:
-            conn = duckdb.connect(str(db_path))
+            dbt_connection = duckdb.connect(str(dbt_database_path))
         
         # List of Gold tables to export
-        gold_tables = [
+        gold_layer_tables = [
             "dim_time",
             "dim_company",
             "dim_location",
@@ -204,21 +212,29 @@ def export_to_csv():
             "agg_location_analysis"
         ]
         
-        for table in gold_tables:
+        # Export each table
+        exported_count = 0
+        for table_name in gold_layer_tables:
             try:
-                # Query the table
-                df = conn.execute(f"SELECT * FROM gold.{table}").fetchdf()
+                # Query the table from gold schema
+                query_result = dbt_connection.execute(f"SELECT * FROM gold.{table_name}").fetchdf()
+                
+                # Define output path
+                csv_output_file = GOLD_LAYER_PATH / f"{table_name}.csv"
                 
                 # Export to CSV
-                output_path = GOLD_PATH / f"{table}.csv"
-                df.to_csv(output_path, index=False)
+                query_result.to_csv(csv_output_file, index=False)
                 
-                print_success(f"Exported {table} ({len(df)} rows)")
+                print_success(f"Exported {table_name} ({len(query_result)} rows)")
+                exported_count += 1
                 
             except Exception as e:
-                print_warning(f"Failed to export {table}: {e}")
+                print_warning(f"Failed to export {table_name}: {e}")
         
-        conn.close()
+        # Close database connection
+        dbt_connection.close()
+        
+        print_info(f"Total tables exported: {exported_count}/{len(gold_layer_tables)}")
         return True
         
     except Exception as e:
@@ -226,35 +242,36 @@ def export_to_csv():
         return False
 
 def generate_summary():
-    """Generate summary of transformation"""
+    """Generate summary of transformation execution"""
     print_section("Summary Report")
     
     try:
         # Count files in each layer
-        bronze_files = list(BRONZE_PATH.glob("*.csv"))
-        silver_files = list(SILVER_PATH.glob("*.csv"))
-        gold_files = list(GOLD_PATH.glob("*.csv"))
+        bronze_layer_files = list(BRONZE_LAYER_PATH.glob("*.csv"))
+        silver_layer_files = list(SILVER_LAYER_PATH.glob("*.csv"))
+        gold_layer_files = list(GOLD_LAYER_PATH.glob("*.csv"))
         
-        print(f"\n{Colors.BOLD}Data Layers:{Colors.ENDC}")
-        print(f"  🟤 Bronze: {len(bronze_files)} files")
-        print(f"  🩶 Silver: {len(silver_files)} files")
-        print(f"  🟡 Gold: {len(gold_files)} files")
+        print(f"\n{Colors.BOLD}Data Layers Summary:{Colors.ENDC}")
+        print(f"  Bronze Layer: {len(bronze_layer_files)} files")
+        print(f"  Silver Layer: {len(silver_layer_files)} files")
+        print(f"  Gold Layer: {len(gold_layer_files)} files")
         
         # Check DBT documentation
-        dbt_docs = DBT_PROJECT_PATH / "target"
-        if dbt_docs.exists():
+        dbt_documentation_path = DBT_PROJECT_PATH / "target"
+        if dbt_documentation_path.exists():
             print(f"\n{Colors.BOLD}DBT Documentation:{Colors.ENDC}")
-            print(f"  Generated: {dbt_docs}")
-            print(f"  Run 'dbt docs serve' to view")
+            print(f"  Location: {dbt_documentation_path}")
+            print(f"  View with: dbt docs serve")
         
         print(f"\n{Colors.BOLD}Next Steps:{Colors.ENDC}")
-        print(f"  1. Review data in {GOLD_PATH}")
+        print(f"  1. Review CSV files in: {GOLD_LAYER_PATH}")
         print(f"  2. Open Power BI Desktop")
-        print(f"  3. Import CSV files from {GOLD_PATH}")
+        print(f"  3. Import CSV files from: {GOLD_LAYER_PATH}")
         print(f"  4. Create relationships and dashboards")
         
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"\n{Colors.OKGREEN}✓ Pipeline completed at {timestamp}{Colors.ENDC}\n")
+        # Timestamp
+        execution_timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"\n{Colors.OKGREEN}Successfully completed at {execution_timestamp}{Colors.ENDC}\n")
         
     except Exception as e:
         print_error(f"Failed to generate summary: {e}")

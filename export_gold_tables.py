@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """
-Export Gold layer tables from DBT DuckDB to CSV
+Export Gold Layer Tables from DBT DuckDB to CSV Format
+
+Script to extract analytics-ready tables from the gold layer
+and save them as CSV files for Power BI import.
 """
 
 import duckdb
 import pandas as pd
 from pathlib import Path
 
-# Setup paths
-DBT_PROJECT_PATH = Path(__file__).parent / "dbt_project"
-GOLD_PATH = Path(__file__).parent / "data" / "gold"
-DB_PATH = DBT_PROJECT_PATH / "duckdb.db"  # Changed from target/duckdb.db
+# Configuration - Project Paths
+PROJECT_ROOT = Path(__file__).parent  # Root directory of the project
+DBT_PROJECT_PATH = PROJECT_ROOT / "dbt_project"  # DBT project directory
+GOLD_LAYER_PATH = PROJECT_ROOT / "data" / "gold"  # Gold layer output directory
+DBT_DATABASE_PATH = DBT_PROJECT_PATH / "target" / "duckdb.db"  # DBT compiled database
 
 # Ensure output directory exists
-GOLD_PATH.mkdir(parents=True, exist_ok=True)
+GOLD_LAYER_PATH.mkdir(parents=True, exist_ok=True)
 
-# Gold tables to export
-GOLD_TABLES = [
+# Gold Layer Tables to Export
+GOLD_LAYER_TABLES = [
     "dim_time",
     "dim_company",
     "dim_location",
@@ -29,56 +33,70 @@ GOLD_TABLES = [
 ]
 
 def export_tables():
-    """Export all gold tables to CSV"""
-    print(f"\n📊 Exporting Gold Layer Tables to CSV\n")
-    print(f"{"=" * 60}")
+    """Export all gold layer tables to CSV format"""
+    print(f"\nExporting Gold Layer Tables to CSV\n")
+    print(f"{'=' * 70}")
     
     try:
         # Connect to DuckDB
-        if DB_PATH.exists():
-            print(f"✓ Using database: {DB_PATH}")
-            conn = duckdb.connect(str(DB_PATH), read_only=True)
+        if DBT_DATABASE_PATH.exists():
+            print(f"Database found: {DBT_DATABASE_PATH}")
+            dbt_connection = duckdb.connect(str(DBT_DATABASE_PATH), read_only=True)
         else:
-            print(f"⚠ Database not found, creating in-memory connection")
-            conn = duckdb.connect(":memory:")
-            # Load models from schemas if in-memory
+            print(f"Warning: Database not found at {DBT_DATABASE_PATH}")
+            print(f"Creating in-memory connection")
+            dbt_connection = duckdb.connect(":memory:")
             return False
         
         # Export each table
-        exported_count = 0
-        for table in GOLD_TABLES:
+        exported_table_count = 0
+        for table_name in GOLD_LAYER_TABLES:
             try:
                 # Try different schema patterns
-                for schema in ["main_gold", "gold", "main"]:
+                schema_names = ["main_gold", "gold", "main"]
+                table_found = False
+                
+                for schema_name in schema_names:
                     try:
-                        query = f"SELECT * FROM {schema}.{table}"
+                        # Build query
+                        sql_query = f"SELECT * FROM {schema_name}.{table_name}"
                         
-                        df = conn.execute(query).fetchdf()
+                        # Execute query
+                        query_result = dbt_connection.execute(sql_query).fetchdf()
+                        
+                        # Define output CSV file
+                        csv_output_file = GOLD_LAYER_PATH / f"{table_name}.csv"
                         
                         # Export to CSV
-                        output_path = GOLD_PATH / f"{table}.csv"
-                        df.to_csv(output_path, index=False)
+                        query_result.to_csv(csv_output_file, index=False)
                         
-                        print(f"✓ Exported {table:40} ({len(df):>8} rows)")
-                        exported_count += 1
+                        # Print success
+                        row_count = len(query_result)
+                        print(f"Exported {table_name:40} ({row_count:>8} rows)")
+                        exported_table_count += 1
+                        table_found = True
                         break
                     except:
                         continue
+                
+                if not table_found:
+                    print(f"Warning: Table {table_name} not found in any schema")
                         
-            except Exception as e:
-                print(f"✗ Failed to export {table}: {e}")
+            except Exception as error:
+                print(f"Error exporting {table_name}: {error}")
         
-        print(f"\n{'=' * 60}")
-        print(f"✓ Exported {exported_count}/{len(GOLD_TABLES)} tables")
-        print(f"✓ Files saved to: {GOLD_PATH}\n")
+        # Summary
+        print(f"\n{'=' * 70}")
+        print(f"Export Complete: {exported_table_count}/{len(GOLD_LAYER_TABLES)} tables")
+        print(f"Output directory: {GOLD_LAYER_PATH}\n")
         
-        conn.close()
+        dbt_connection.close()
         return True
         
-    except Exception as e:
-        print(f"✗ Export failed: {e}")
+    except Exception as error:
+        print(f"Error during export: {error}")
         return False
 
 if __name__ == "__main__":
-    success = export_tables()
-    exit(0 if success else 1)
+    export_success = export_tables()
+    exit(0 if export_success else 1)

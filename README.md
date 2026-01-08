@@ -214,7 +214,7 @@ pip install dbt-core dbt-duckdb pandas openpyxl numpy
 
 ```bash
 # Naviguer dans le répertoire du projet
-cd C:\path\to\job-intelligent
+cd C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi
 
 # Initialiser et valider DBT
 cd dbt_project
@@ -242,7 +242,7 @@ dir final_data.csv
 Exécution complète du pipeline de transformation en une seule commande :
 
 ```bash
-cd C:\path\to\job-intelligent
+cd C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi
 python run_pipeline.py
 ```
 
@@ -351,7 +351,7 @@ dbt run --full-refresh
 1. Ouvrir **Power BI Desktop**
 2. Menu : **Fichier → Nouveau**
 3. Menu : **Accueil → Obtenir les données → Texte/CSV**
-4. Naviguer vers : `C:\path\to\job-intelligent\data\gold\`
+4. Naviguer vers : `C:\Users\Ayoub Gorry\Desktop\powerbi\jobs-power-bi\data\gold\`
 
 ### Ordre de Chargement Recommandé
 

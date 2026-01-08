@@ -20,7 +20,7 @@ SELECT
     
     -- Métadonnées de traçabilité
     NOW() as ingestion_timestamp,
-    '2026-01-08 14:19:03.961277+00:00' as dbt_run_id
+    '2026-01-08 18:28:54.559565+00:00' as dbt_run_id
 
 FROM read_csv_auto('../data/bronze/final_data.csv')
 
